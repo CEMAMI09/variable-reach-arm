@@ -1,0 +1,217 @@
+{
+  "geometry": {
+    "h_pivot": 0.65,
+    "L_min": 0.7,
+    "L_max": 1.2,
+    "L_normal": 0.7,
+    "extension_stroke": 0.5,
+    "min_overlap": 0.2,
+    "outer_od": 0.04,
+    "outer_id": 0.036,
+    "inner_od": 0.032,
+    "inner_id": 0.028,
+    "yaw_min_deg": -70.0,
+    "yaw_max_deg": 70.0,
+    "pitch_min_deg": -15.0,
+    "pitch_max_deg": 70.0
+  },
+  "masses_updated": {
+    "catcher": 0.14,
+    "catcher_sensors": 0.03,
+    "inner_tube": 0.22619467105846497,
+    "outer_tube": 0.28651325000738936,
+    "extension_drive_moving": 0.05,
+    "pitch_bracket": 0.4,
+    "yaw_structure": 0.8,
+    "base": 2.5
+  },
+  "pitch_gravity_Lmin": {
+    "L_m": 0.7,
+    "pitch_deg": 0.0,
+    "tau_tip_Nm": 1.5107400000000002,
+    "tau_inner_Nm": 0.8543033433871635,
+    "tau_outer_Nm": 0.7869945951202971,
+    "tau_gravity_Nm": 3.1520379385074606
+  },
+  "pitch_gravity_Lmax": {
+    "L_m": 1.2,
+    "pitch_deg": 0.0,
+    "tau_tip_Nm": 2.58984,
+    "tau_inner_Nm": 1.4645200172351374,
+    "tau_outer_Nm": 0.7869945951202971,
+    "tau_gravity_Nm": 4.841354612355435
+  },
+  "pitch_inertia_Lmin": {
+    "L_m": 0.7,
+    "I_tip": 0.10779999999999999,
+    "I_inner": 0.03694512960621594,
+    "I_outer": 0.04679716416787359,
+    "I_bracket": 0.00128,
+    "I_total_kgm2": 0.19282229377408955
+  },
+  "pitch_inertia_Lmax": {
+    "L_m": 1.2,
+    "I_tip": 0.3168,
+    "I_inner": 0.10857344210806316,
+    "I_outer": 0.04679716416787359,
+    "I_bracket": 0.00128,
+    "I_total_kgm2": 0.47345060627593677
+  },
+  "yaw_inertia_Lmax_horizontal": {
+    "L_m": 1.2,
+    "pitch_deg": 0.0,
+    "I_yaw_kgm2": 0.47793060627593675
+  },
+  "extension_force": {
+    "m_moving_kg": 0.44619467105846494,
+    "F_accel_N": 1.7847786842338598,
+    "F_grav_N": 3.095126393596814,
+    "F_friction_N": 2.5,
+    "F_peak_N": 7.379905077830673,
+    "F_continuous_N": 6.130559998866971
+  },
+  "belt_drive": {
+    "pulley_diameter_mm": 22.0,
+    "torque_at_pulley_Nm": 0.08117895585613741,
+    "motor_rpm_at_v": 1041.741445692406,
+    "mech_power_W": 8.855886093396808
+  },
+  "pitch_motor": {
+    "tau_gravity_raw_Nm": 4.841354612355435,
+    "counterbalance_fraction": 0.45,
+    "tau_gravity_net_Nm": 2.6627450367954895,
+    "tau_dynamic_Nm": 2.892145173777449,
+    "tau_friction_Nm": 0.4,
+    "tau_peak_load_Nm": 5.954890210572939,
+    "tau_with_margin_Nm": 11.909780421145879,
+    "selected_motor": "MKS SERVO57 / NEMA23 closed-loop stepper",
+    "motor_cont_Nm": 1.2,
+    "motor_peak_Nm": 2.2,
+    "belt_reduction": 8.0,
+    "output_peak_capacity_Nm": 17.6,
+    "ok": true
+  },
+  "yaw_motor": {
+    "tau_peak_load_Nm": 3.5865850702271085,
+    "tau_with_margin_Nm": 7.173170140454217,
+    "selected_motor": "MKS SERVO57 / NEMA23 closed-loop stepper (same class as pitch)",
+    "motor_peak_Nm": 2.2,
+    "belt_reduction": 6.0,
+    "output_peak_capacity_Nm": 13.200000000000001,
+    "ok": true,
+    "note": "NEMA17 rejected: 0.6 Nm \u00d7 5 = 3 Nm < 7.2 Nm required"
+  },
+  "extension_motor": {
+    "F_peak_N": 7.379905077830673,
+    "pulley_d_mm": 22.0,
+    "tau_pulley_Nm": 0.08117895585613741,
+    "tau_with_margin_Nm": 0.16235791171227482,
+    "selected_motor": "MKS SERVO42C / NEMA17 closed-loop stepper",
+    "motor_peak_Nm": 0.6,
+    "reduction": 1.0,
+    "capacity_Nm": 0.6,
+    "ok": true
+  },
+  "extension_drive_comparison": [
+    {
+      "name": "Option A \u2014 HTD5 / GT2 timing belt",
+      "max_force_N": 80,
+      "max_velocity_mps": 2.0,
+      "backlash_mm": 0.3,
+      "elasticity": "low (polyurethane + steel cords)",
+      "efficiency": 0.92,
+      "moving_mass_penalty": "low \u2014 motor proximal",
+      "reliability": "high with tensioner",
+      "fabrication": "easy \u2014 COTS pulleys",
+      "cost_usd": 25,
+      "meets_dynamics": true,
+      "score": 9
+    },
+    {
+      "name": "Option B \u2014 Dyneema / Spectra capstan",
+      "max_force_N": 200,
+      "max_velocity_mps": 2.5,
+      "backlash_mm": 1.0,
+      "elasticity": "very low stretch but stretch under cyclic load",
+      "efficiency": 0.85,
+      "moving_mass_penalty": "lowest",
+      "reliability": "medium \u2014 abrasion, termination",
+      "fabrication": "harder terminations / routing",
+      "cost_usd": 20,
+      "meets_dynamics": true,
+      "score": 7
+    },
+    {
+      "name": "Lead screw (rejected baseline)",
+      "max_force_N": 300,
+      "max_velocity_mps": 0.4,
+      "backlash_mm": 0.1,
+      "elasticity": "very stiff",
+      "efficiency": 0.4,
+      "moving_mass_penalty": "high if nut travels; screw mass",
+      "reliability": "high",
+      "fabrication": "easy",
+      "cost_usd": 35,
+      "meets_dynamics": false,
+      "score": 3
+    }
+  ],
+  "selected_extension_drive": "Option A \u2014 HTD5 / GT2 timing belt",
+  "structure": {
+    "I_outer_m4": 4.3215748542781214e-08,
+    "delta_static_ideal_mm": 0.31754138327243747,
+    "delta_telescoping_est_mm": 0.5773479695862499,
+    "delta_catch_impulse_est_mm": 0.22848813331350054,
+    "limit_mm": 25.0,
+    "safety_factor_static_target": 2.5,
+    "bearing_radial_est_N": 84.29077589208526,
+    "pitch_shaft_recommend_mm": 12,
+    "bearings": "2x 6001-2RS or 6801-2RS"
+  },
+  "electrical": {
+    "v_bus": 24.0,
+    "i_peak_A": 1.6823044694814262,
+    "i_cont_A": 0.5888065643184991,
+    "psu_recommendation": "24V 15A meanwell-class (360W)",
+    "estop_relay": "Normally-closed e-stop cutting motor DC bus"
+  },
+  "energy": {
+    "E_extension_J": 1.249798081241139,
+    "E_pitch_J": 1.0383933749776466,
+    "E_cycle_est_J": 7.288191456218786
+  },
+  "conflicts_and_resolutions": [
+    {
+      "issue": "Pitch peak torque with 2\u00d7 margin exceeds NEMA23@8:1 without assistance",
+      "calculation": "\u03c4_peak\u22488.1 Nm \u2192 16.3 Nm required; capacity ~16 Nm borderline",
+      "resolution": "Add pitch counterbalance cancelling ~45% of gravity; keep 8:1 HTD5 + SERVO57",
+      "parameters_changed": [
+        "counterbalance_fraction=0.45",
+        "pitch_motor_peak=2.2 Nm"
+      ]
+    },
+    {
+      "issue": "Yaw NEMA17@5:1 capacity 3 Nm << ~7.2 Nm required with margin",
+      "resolution": "Use NEMA23 closed-loop on yaw with 6:1 belt (+~$35)",
+      "parameters_changed": [
+        "yaw_motor=NEMA23",
+        "yaw_belt_reduction=6"
+      ]
+    },
+    {
+      "issue": "Industrial BLDC servo kit (3 axes) would exceed $500 budget",
+      "resolution": "Closed-loop steppers + host PC vision; accept lower continuous power density",
+      "parameters_changed": [
+        "actuator_class=closed_loop_stepper"
+      ]
+    }
+  ],
+  "assumptions": [
+    "Pitch angle 0 = horizontal (matches FK z = h + L sin \u03b8p).",
+    "Carbon-fiber tube E \u2248 70 GPa (conservative; verify supplier datasheet).",
+    "Guide friction \u2248 2.5 N; measure on extension test rig (Milestone 1).",
+    "Closed-loop steppers used instead of industrial BLDC servos to stay under $500.",
+    "Initial software velocity limits will be ~40% of design targets.",
+    "Counterbalance spring deferred until pitch thermal/current data from Milestone 2."
+  ]
+}

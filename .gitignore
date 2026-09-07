@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+.venv/
+.pio/
+.vscode/
+.DS_Store
+*.o
+/tmp/

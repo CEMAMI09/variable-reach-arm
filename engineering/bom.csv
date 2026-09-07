@@ -1,0 +1,38 @@
+item,qty,component,spec,unit_price_usd,ext_price_usd,supplier,mass_g,purpose
+1,1,Base plate aluminum,300x300x6mm 6061 plate,28,28,OnlineMetals / local,1450,Fixed base footprint
+2,4,Rubber feet,M6 leveling feet,3,12,Amazon,80,Bench mount
+3,2,NEMA23 closed-loop stepper,MKS SERVO57C or equiv 2.2Nm peak + driver,55,110,AliExpress / Amazon,700,Yaw and pitch actuators
+4,1,NEMA17 closed-loop stepper,MKS SERVO42C or equiv,35,35,AliExpress / Amazon,350,Extension actuator
+5,1,Teensy 4.1,ARM Cortex-M7 MCU,32,32,PJRC,15,Real-time controller
+6,1,24V 15A PSU,Mean Well LRS-350-24 or equiv,38,38,DigiKey / Amazon,700,Motor bus power
+7,1,DC-DC 24V to 5V,5A buck module,8,8,Amazon,25,Logic / USB hub / sensors
+8,1,E-stop mushroom + NC contact,22mm industrial e-stop,12,12,Amazon,80,Hardware motor-power cut
+9,1,Automotive relay or contactor,24V coil 20A+ contacts,10,10,Amazon,50,E-stop power interrupt
+10,4,Deep groove bearing 6001-2RS,12x28x8mm,2.5,10,McMaster / Amazon,20,Yaw and pitch shafts
+11,2,Thrust bearing or flange washer set,For yaw axial load,4,8,McMaster,30,Yaw axial support
+12,1,Pitch shaft,Steel rod 12mm x 120mm,6,6,OnlineMetals,110,Pitch axis
+13,1,Yaw shaft / turret tube,Steel or Al tube for yaw,8,8,OnlineMetals,200,Yaw structure
+14,1,CF outer tube,OD40mm ID36mm L=750mm,35,35,DragonPlate / Ali CF,290,Outer boom
+15,1,CF inner tube,OD32mm ID28mm L=750mm,30,30,DragonPlate / Ali CF,230,Telescoping boom
+16,1,HTD5 belt kit pitch,Pulleys 20T/160T + belt + tensioner,22,22,SDP-SI / Amazon,120,Pitch 8:1 reduction
+17,1,HTD5 belt kit yaw,Pulleys 20T/120T + belt + tensioner,20,20,SDP-SI / Amazon,110,Yaw 6:1 reduction
+18,1,GT2 extension belt set,2m GT2 6mm + 36T pulley + idlers,12,12,Amazon,40,Extension drive Option A
+19,1,Pitch gas spring or torsion springs,~50-80N counterbalance approx,15,15,McMaster / Amazon,150,Pitch gravity assist
+20,1,Limit switches,2x mechanical or optical for extension,4,8,Amazon,20,Home and max extension
+21,1,IR break-beam pair,3mm IR LED + phototransistor,3,3,Adafruit / Amazon,5,Catch confirmation
+22,1,Micro servo 9g,SG90 metal-gear preferred,5,5,Amazon,9,Ball retention latch
+23,1,TPU filament 95A,1kg roll (partial use),22,22,Amazon,140,Catcher fingers / funnel
+24,1,PETG filament,1kg roll (partial use),18,18,Amazon,400,Mounts guides brackets
+25,1,UHMW tape / Delrin stock,Guide surfaces,10,10,McMaster,30,Low-friction guides
+26,1,Fastener kit,M3/M4/M5 screws inserts washers,20,20,Amazon,200,Assembly
+27,20,Heat-set inserts,M3 and M4 brass,0.2,4,Amazon,15,Printed part threads
+28,1,Wire cable sleeving,Silicone wire 18/22 AWG + loom,15,15,Amazon,100,Power and signal
+29,1,Protoboard / custom carrier,MCU breakout + connectors,8,8,Amazon,30,Electronics mounting
+30,1,USB camera primary,>=60FPS 720p color (ELP or equiv),35,35,Amazon,80,Phase 2 vision
+31,1,USB camera secondary,Matching camera for stereo,35,35,Amazon,80,Phase 3 stereo
+32,1,Foam practice balls,70mm soft foam 6-pack,10,10,Amazon,50,Target objects
+33,1,Acrylic shield panel,Optional 3mm barrier sheet,20,20,Local plastics,800,High-speed test guard
+34,1,String pot or mag strip optional,Extension backup encoder,25,25,Amazon,40,Optional linear feedback
+35,1,Misc adhesives epoxy Loctite,Assembly consumables,12,12,Hardware store,0,Bonding CF / set screws
+TOTAL,,Sum of ext_price,,,,,449,
+RESERVE,,Budget reserve 10pct target,,51,51,,,"Hard max 500; preferred 300-450 — currently ~449 before reserve; drop second camera until M5 if needed"

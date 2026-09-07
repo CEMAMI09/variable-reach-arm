@@ -1,0 +1,5 @@
+timestamp,yaw_pos,yaw_target,yaw_vel,pitch_pos,pitch_target,pitch_vel,ext_pos,ext_target,ext_vel,current_yaw,current_pitch,current_ext,ball_x,ball_y,ball_z,ball_x_meas,ball_y_meas,ball_z_meas,intercept_x,intercept_y,intercept_z,catch_result,fault_bits
+0.00,0,0,0,20,20,0,700,700,0,100,120,80,,,,,,,,,-1,0
+0.10,2,5,20,22,25,30,700,700,0,200,300,90,0.9,0.05,1.1,0.9,0.05,1.1,,,,,0
+0.20,5,8,30,28,35,40,720,800,400,250,400,200,0.88,0.05,1.05,0.88,0.05,1.05,0.85,0.05,0.95,,0
+0.40,8,8,0,35,35,0,950,980,200,180,350,220,0.85,0.05,0.90,0.85,0.05,0.90,0.85,0.05,0.90,1,0

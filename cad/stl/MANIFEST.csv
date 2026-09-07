@@ -1,0 +1,22 @@
+file,qty,material,notes
+PitchCheek_L.stl,1,PETG,Bearing pocket + NEMA23 + M4 inserts
+PitchCheek_R.stl,1,PETG,Identical to L; mirror in assembly
+NEMA23_MountPlate.stl,2,PETG,Extra motor plates (yaw/pitch)
+NEMA17_MountPlate.stl,1,PETG,Extension motor
+YawHubClamp.stl,1,PETG,Fits over yaw tube; check ID to stock
+Guide_1.stl,1,Nylon or PETG,UHMW tape ID after print
+Guide_2.stl,1,Nylon or PETG,UHMW tape ID after print
+ExtensionStop_Min.stl,1,PETG,Retract bumper
+ExtensionStop_Max.stl,1,PETG,Extend bumper
+CableGuide.stl,3,PETG,Print 3 from one STL
+CatcherHub.stl,1,PETG,Clamp on CF inner tip
+CatcherAdapter.stl,1,PETG,Behind hub on inner tube
+CatcherFunnel.stl,1,TPU 95A,Soft entrance
+CatcherCradle.stl,1,TPU 95A,Soft backstop
+CatcherRib.stl,3,PETG,Print 3
+CatcherFinger.stl,3,PETG,Print 3; Ø6 pins
+CatcherTipPad.stl,3,TPU 95A,Print 3; glue/slip on tips
+HingePin.stl,6,PETG,2 pins × 3 claws (or use steel dowel)
+BaseFootSpacer.stl,4,PETG,Optional under leveling feet
+ElectronicsEnclosure.stl,1,PETG,Hollow box + insert posts
+ElectronicsEnclosure_Lid.stl,1,PETG,M3 screw-down lid
