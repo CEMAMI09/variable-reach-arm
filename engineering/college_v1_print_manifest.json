@@ -1,0 +1,178 @@
+{
+  "status": "Print-first compact V1 design intent; no manufacturing/STL release",
+  "printer": "User has work Prusa access; exact model/build volume and filament provision unconfirmed",
+  "cost": "All printed part material is charged through two full PETG spools in bom_college_v1.csv; not separately charged per part",
+  "columns": [
+    "planned_id",
+    "part",
+    "quantity",
+    "material",
+    "orientation",
+    "perimeters_infill",
+    "qualification"
+  ],
+  "parts": [
+    [
+      "V1-BASE",
+      "Base and bench-clamp pads",
+      "1 set",
+      "PETG",
+      "Print flat; ribbed box sections",
+      "6 / 25–35%",
+      "Bench clamps remain steel; local crush and base lift tests"
+    ],
+    [
+      "V1-YAW",
+      "Yaw bearing housing and turret",
+      "1 set",
+      "PETG",
+      "Split around bearing axis; place main webs in XY",
+      "6 / 30–40%",
+      "Real 608 bearings and steel shaft; through-bolted retention"
+    ],
+    [
+      "V1-SHOULDER",
+      "Shoulder and yoke",
+      "1 set",
+      "PETG",
+      "Two boxed side cheeks printed flat then tied across",
+      "6 / 30–40%",
+      "Do not reuse thin metal cheek thickness; no released compact geometry yet"
+    ],
+    [
+      "V1-OUTER",
+      "Outer telescope shells and joint sleeves",
+      "1 set",
+      "PETG",
+      "Longitudinal split shells printed flat; joints outside guide swept path",
+      "6 / 25–35%",
+      "Printer model/usable bed length unconfirmed; measure straightness"
+    ],
+    [
+      "V1-INNER",
+      "Inner telescope shells and rear plug",
+      "1 set",
+      "PETG",
+      "Longitudinal load path; bolted lap joints if bed requires",
+      "6 / 25–35%",
+      "Accept slower motion/greater flex; check overlap and pullout"
+    ],
+    [
+      "V1-GUIDES",
+      "Replaceable guide shoes and shims",
+      "1 set",
+      "PETG with purchased PTFE facing",
+      "Print wear face flat; calibrate clearance coupon",
+      "5 / 30%",
+      "Test low-speed stick-slip; tape adhesion and peel remain risks"
+    ],
+    [
+      "V1-MOUNTS",
+      "Motor brackets and driver mounts",
+      "1 set",
+      "PETG",
+      "Mounting faces flat; gussets along torque path",
+      "6 / 30%",
+      "Temperature/creep test at derated current"
+    ],
+    [
+      "V1-PULLEYS",
+      "All drive and idler pulley bodies",
+      "1 set",
+      "PETG",
+      "Pulley axis normal to bed; broad teeth and hub webs",
+      "6 / 35–45%",
+      "Planned 32T pinions; torque/slip/runout proof; no small thin printed grub-screw hub"
+    ],
+    [
+      "V1-CAPS",
+      "Bearing retaining caps",
+      "1 set",
+      "PETG",
+      "Cap faces flat; annular ribs with through-bolt washers",
+      "6 / 35%",
+      "Retain bearing axial load; do not crush or preload outer/inner races incorrectly"
+    ],
+    [
+      "V1-BELTCLAMP",
+      "Toothed belt clamps and caps",
+      "1 set",
+      "PETG",
+      "Tooth face on accessible flat face; long two-piece sandwich",
+      "6 / 40%",
+      "Steel through-bolts/locknuts; belt pullout and cyclic slip test required"
+    ],
+    [
+      "V1-COLLARS",
+      "Shaft collars and spacers",
+      "1 set",
+      "PETG",
+      "Split clamp body; axial retention plus steel washers/pins",
+      "6 / 40%",
+      "Do not rely solely on printed threads or friction for gravity retention"
+    ],
+    [
+      "V1-STOPS",
+      "Telescope stops and padded pitch catch cradle",
+      "1 set",
+      "PETG with EVA pads",
+      "Lay webs in load plane; rounded transitions",
+      "6 / 40%",
+      "Support frame stiffness and bounded-drop energy need proof"
+    ],
+    [
+      "V1-FRICTION",
+      "Pitch friction disk and preload housing",
+      "1 set",
+      "PETG with cork-rubber facing",
+      "Disk flat; broad friction radius; metal preload hardware",
+      "6 / 40%",
+      "Custom candidate not qualified brake: hold torque vs gravity AND motor torque vs friction"
+    ],
+    [
+      "V1-CLAW",
+      "Claw palm and three rigid fingers",
+      "1 set",
+      "PETG",
+      "Finger bending plane in XY; avoid root tension across layers",
+      "5–6 / 30–40%",
+      "Steel pivots and purchased springs; use supplied servo horn"
+    ],
+    [
+      "V1-LINKAGE",
+      "Claw equalizer, tendon guides and servo cradle",
+      "1 set",
+      "PETG",
+      "Guide paths accessible for lining/finishing",
+      "5 / 25–35%",
+      "Servo travel/current and line abrasion must be tested"
+    ],
+    [
+      "V1-SENSORS",
+      "Sensor brackets and encoder drums",
+      "1 set",
+      "PETG",
+      "Coaxial features printed flat then calibrated",
+      "4–5 / 25%",
+      "Magnets and sensor ICs purchased; extension reference design unfinished"
+    ],
+    [
+      "V1-GUARDS",
+      "Belt/pinch guards and electronics enclosure",
+      "1 set",
+      "PETG",
+      "Modular panels printed flat",
+      "3–4 / 15–25%",
+      "Heat ventilation; printed cover not a projectile-containment certification"
+    ],
+    [
+      "V1-CABLES",
+      "Cable guides, strain-relief clamps and switch mounts",
+      "1 set",
+      "PETG",
+      "Clamp faces flat; radiused bend paths",
+      "4 / 20–30%",
+      "Wire and connectors purchased; check full travel"
+    ]
+  ]
+}

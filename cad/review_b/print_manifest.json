@@ -1,0 +1,22 @@
+[
+  {
+    "file": "GuideFitCoupon.stl",
+    "volume_mm3": 14871.468750000004,
+    "status": "FIT/UNPOWERED PROTOTYPE ONLY"
+  },
+  {
+    "file": "ClawFitPrototype.stl",
+    "volume_mm3": 11068.038139347405,
+    "status": "FIT/UNPOWERED PROTOTYPE ONLY"
+  },
+  {
+    "file": "GripperPalmFitPrototype.stl",
+    "volume_mm3": 22834.60370536887,
+    "status": "FIT/UNPOWERED PROTOTYPE ONLY"
+  },
+  {
+    "file": "PalmPadFitPrototype.stl",
+    "volume_mm3": 11929.354643213625,
+    "status": "FIT/UNPOWERED PROTOTYPE ONLY"
+  }
+]

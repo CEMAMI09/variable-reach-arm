@@ -1,0 +1,117 @@
+{
+  "status": "Sampled rigid gear pairs clear; printing backlash and load capacity unqualified",
+  "samples": [
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 6,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 9,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        80
+      ],
+      "pinion_angle_deg": 18,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 6,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 9,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "teeth": [
+        20,
+        160
+      ],
+      "pinion_angle_deg": 18,
+      "overlap_mm3": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "model": "23E1K-20",
+  "source_url": "https://www.omc-stepperonline.com/download/23E1K-20_Torque_Curve.pdf",
+  "inspected_date": "2026-09-07",
+  "method": "Visual reading of manufacturer PDF graph in browser; rounded approximate readings, not raw supplier data",
+  "curve_type": "pull-out torque; not continuous thermal torque",
+  "bus_voltage_v": 48,
+  "phase_current_a": 5,
+  "torque_reading_allowance_nm": 0.05,
+  "rpm_reading_allowance": 10,
+  "points_rpm_nm": [[50,1.69],[100,1.67],[150,1.61],[180,1.58],[240,1.54],[300,1.52],[360,1.45],[420,1.40],[480,1.34]],
+  "qualification": "Not qualified at24V. Pull-out readings alone do not qualify RMS duty, temperature, driver current convention, regen handling or acceleration. No extrapolation beyond digitized range."
+}

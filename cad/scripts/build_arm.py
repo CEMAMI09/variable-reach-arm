@@ -128,6 +128,7 @@ def add_params_spreadsheet(doc):
 
 
 def build():
+    raise RuntimeError('Legacy concept assembly is retained for reference only. Current study: build_review_telescope.py. Full robot is not released.')
     doc = clear_doc()
     add_params_spreadsheet(doc)
 

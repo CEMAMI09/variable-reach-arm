@@ -1,0 +1,405 @@
+{
+  "slicer": "PrusaSlicer2.9.6",
+  "profile": "Generic geometry check:0.4 nozzle0.2layerPETG6walls25%gyroid; NOT a hardware-selected profile",
+  "parts": [
+    {
+      "name": "V1_Base",
+      "stl_sha256": "a12d0d15ab8ec7efa0da622b0ee7eeb85b19a92ff47a8e7097be3cf73c8eda5e",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 144.6,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_YawUpperDeck",
+      "stl_sha256": "d708493d67bd3ac0638cccbaf952bbafebedb73b65d00062e95f1a1482f7dc10",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 166.26,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_DeckSpacer76",
+      "stl_sha256": "216defb021675c87cb6bc4e04b275b429ee0e1d25244fd50726b9d72527ba312",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 24.32,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_YawMotorPlate",
+      "stl_sha256": "594cdc223005a5b443139c7b6f910a2c545705dcbeb7f4c4bc64bc13df36eaea",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 19.34,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_MotorSpacer45",
+      "stl_sha256": "1304f7e4746e8231179c41da96c0900917bf56f756ef0b1bba5fc67c41553050",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 14.41,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Turret",
+      "stl_sha256": "0897ed36be1570e4ef7d6057a49c4463f1e1dc3360129d95638f4914acd343f9",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 289.12,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_YokeCheek",
+      "stl_sha256": "288d709f473d0ec81be3ac7ef1039f10b4dcd8a1af98d92970c912f199d8f216",
+      "qty": 2,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 184.35,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_OutboardGearPlate",
+      "stl_sha256": "af3cb7d699084d98cacfe684ab72d7f8b0a89f778696d60d86c19e627dd74e7e",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 185.41,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_GearPlateSpacer40",
+      "stl_sha256": "5e785c7466339f8c34c2761331f18c465cc2b955505c2e12e8d5a1c45396a947",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 12.81,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_YokeFoot",
+      "stl_sha256": "41ad43504fbcbb787cc0c3a743a3e1920983749d1a19697907beab36a1eed11a",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 22.17,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_BearingCap608",
+      "stl_sha256": "7f0f1668de1a25d8dc65ded5d6104fa56a7caf7dd78218e0a0dc22eaa387344e",
+      "qty": 2,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 6.21,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_CheekBearingCap608",
+      "stl_sha256": "f1b1efdcdb29b4742ef54f560926292eda5e3a3a15248606b64303e317488314",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 4.93,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Pinion20_5mm",
+      "stl_sha256": "ba0d2da8ee0c66bd9f99029e3448fc7b013481603d536328d1a50ce4fb21b0a2",
+      "qty": 2,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 7.41,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Pinion20_8mm",
+      "stl_sha256": "e72757151b59359311c45c059f2488a9582f5adeb7bd1fb42b05ac108de5963b",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 8.51,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Gear80_8mm",
+      "stl_sha256": "5e3b63f9b457e65064b207f0d26d0f5eaaf616e770b9b4fe5ded80166e566ebd",
+      "qty": 2,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 47.45,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Gear160_8mm",
+      "stl_sha256": "b693845490281610fb0c2f897da16049fb5979f8454599112cf76b8222f1daf5",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 145.46,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_SaddleRail",
+      "stl_sha256": "71aaa0f33b8c7972e01388cc7141cc7269cbea12e681d361fca6a35084e6d38b",
+      "qty": 2,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 80.42,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_SaddleCrossbar",
+      "stl_sha256": "d4d9736c966ab9878d860bb9abcd6d0e1b30e101ab872cb34e59a961760705da",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 11.37,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Collar8",
+      "stl_sha256": "824812596caba766fd8db284f1824792b60d5afe3686eb30df8b052f09b2b882",
+      "qty": 6,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 3.2,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_608FitCoupon",
+      "stl_sha256": "2aaf89e3ee39df33e1837bfa87fff48225406d53b1a43fa73e37689efc97a0ed",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 14.19,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Outer_1",
+      "stl_sha256": "fffe0ec69b04bbe0ff8ff561051ee07bfe5acb8454ed0cf95f5b2600c3e671d2",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 119.03,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Outer_2",
+      "stl_sha256": "fffe0ec69b04bbe0ff8ff561051ee07bfe5acb8454ed0cf95f5b2600c3e671d2",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 119.03,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Outer_3",
+      "stl_sha256": "290148717cc989ce8fc2f354172db225c0a2324dd6128f865bd823965b7923b6",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 120.72,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Inner_1",
+      "stl_sha256": "82793a2a1176c015a9dba2e7a263a91dfca736bb4358e3eb68956fa924143136",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 74.52,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Inner_2",
+      "stl_sha256": "d458c128c7a186898fe2238b2f31f68db9061db17d76e53af5e950674bacd169",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 74.41,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Inner_3",
+      "stl_sha256": "8f80ddd4d422919f0791ae86d9a4ec7292a23026349487863f5e6898cdd504c8",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 58.76,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Front_Guide_Cap",
+      "stl_sha256": "5fb7e36b097c7d71fc8cce308558c1c1b30939d2329dfa32ba9443881a7e8d6d",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 4.17,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Front_Guide_Pad",
+      "stl_sha256": "bed79d51d32fc6e54a4006666460f8b39834f44b22011a58e734faa675ff5c03",
+      "qty": 4,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 0.61,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Rear_Guide_Ring",
+      "stl_sha256": "518ae3961dda22f62b5226a83ded73b5fc041d40d086cb95b222df47a1cbcb6e",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 5.04,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Rear_Tether_Cap",
+      "stl_sha256": "b6158dbd994709fcc8643a33babc220c29b251034e6d0ba81b0f3ae8c5ccb1ac",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 15.11,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Inner_Rear_Cap",
+      "stl_sha256": "6e0b306786c4601861b579792009db29c0f4bd944047732b1946770bd2bd7608",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 8.48,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Outer_Fit_Coupon",
+      "stl_sha256": "a35463876e92fac2e4ac889b28bf8a47838fe7ae30cb51b338fe450180afbdc2",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 14.24,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Inner_Fit_Coupon",
+      "stl_sha256": "ee0b65e60e1576e10f8a4f3f2037f39fc2cc2143ceeea973149363a594ea4310",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 8.79,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Joint_Male_Fit_Coupon",
+      "stl_sha256": "a9107dd839dc8f6c7c953c4b2544cd62bea6042e7fc13dc01cee38dc2a4c2de2",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 24.45,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "Telescope_Joint_Female_Fit_Coupon",
+      "stl_sha256": "c33b16f7fa10f8b080c33a3e3e84ae4e40b82d2e300402649704acedfddaaf46",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 17.46,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Palm",
+      "stl_sha256": "605e019daad20bcc349045d4ecb070f6c0e61fab67a1f30fc9515b41d82d2690",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 14.7,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Finger_Left",
+      "stl_sha256": "d8cf62b96e9f271e940a35b1bb60bc43e9c60b49d88f945cd490b077d0186b04",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 4.24,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Finger_Right",
+      "stl_sha256": "0a8d5345f5597828c1b47c202d35d4c59ea7b140b63dbc4f093741fd8d8d512e",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 4.24,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Pushrod",
+      "stl_sha256": "db96049a9a57f40f6597e71be56252f14dcbfff69b0445ec1924a68cfe86a484",
+      "qty": 2,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 0.73,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Crank_Adapter",
+      "stl_sha256": "88a4657f19ab7c6acb19f2ca18dcba6d0ac3f206b4bfb1472cfc398fb0421bcc",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 0.53,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Servo_Carrier",
+      "stl_sha256": "7314d82d1a6a7fdb15cb67d1e02fb600e50a8d2082ad233a0f9ab6c1d732ba86",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 4.04,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Spacer_1mm",
+      "stl_sha256": "69c9cd37decb85e39bab001059960121ad1cd1b0d25ccea5b704e1c2b522c10e",
+      "qty": 5,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 0.04,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Spacer_2mm",
+      "stl_sha256": "a83efc80773731afee1dd038356ae973566b5384c1b2721be704df4ceb2784ed",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 0.08,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    },
+    {
+      "name": "V1_Claw_Spacer_6mm",
+      "stl_sha256": "72421bf391af2ed4e8f359fca8fb6fd7949251ba0dabebdf87572ed237109eba",
+      "qty": 1,
+      "manifold": true,
+      "slice_exit_code": 0,
+      "estimated_mass_g": 0.23,
+      "notes": "Geometry/toolpath check only; not machine-approved G-code"
+    }
+  ],
+  "unique_parts": 44,
+  "all_manifold_and_sliced": true,
+  "estimated_set_mass_g": 2700.18
+}

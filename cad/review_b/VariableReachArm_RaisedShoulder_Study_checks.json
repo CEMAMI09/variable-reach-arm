@@ -1,0 +1,246 @@
+{
+  "status": "DESIGN STUDY \u2014 NOT RELEASED FOR MANUFACTURE OR POWERED CATCHING",
+  "valid_solid_objects": 251,
+  "ratios_verified": {
+    "pitch": 8,
+    "yaw": 6
+  },
+  "belt_stages": [
+    {
+      "name": "PitchStage1Belt",
+      "driver_teeth": 20,
+      "driven_teeth": 40,
+      "center_distance_mm": 75.0,
+      "pitch_length_screen_mm": 303.37737278807793,
+      "ratio": 2.0
+    },
+    {
+      "name": "PitchStage2Belt",
+      "driver_teeth": 20,
+      "driven_teeth": 80,
+      "center_distance_mm": 158.11388300841898,
+      "pitch_length_screen_mm": 580.6460232158671,
+      "ratio": 4.0
+    },
+    {
+      "name": "YawStage1Belt",
+      "driver_teeth": 20,
+      "driven_teeth": 30,
+      "center_distance_mm": 90.13878188659973,
+      "pitch_length_screen_mm": 305.9800997788017,
+      "ratio": 1.5
+    },
+    {
+      "name": "YawStage2Belt",
+      "driver_teeth": 20,
+      "driven_teeth": 80,
+      "center_distance_mm": 115.0,
+      "pitch_length_screen_mm": 499.82370984306607,
+      "ratio": 4.0
+    }
+  ],
+  "selected_intersections_mm3": {
+    "PitchKeyedStub12_0__InnerTube": 0.0,
+    "PitchKeyedStub12_0__OuterTube": 0.0,
+    "PitchKeyedStub12_2__InnerTube": 0.0,
+    "PitchKeyedStub12_2__OuterTube": 0.0,
+    "BoomTrunnionSideRail_0__InnerTube": 0.0,
+    "BoomTrunnionSideRail_0__OuterTube": 0.0,
+    "BoomTrunnionSideRail_2__InnerTube": 0.0,
+    "BoomTrunnionSideRail_2__OuterTube": 0.0
+  },
+  "added_part_mass_screen_kg": {
+    "stationary": 6.555733681226788,
+    "yaw": 5.480044994112767,
+    "pitch": 1.1203468303232051
+  },
+  "added_yaw_parts_inertia_screen_kgm2": 0.11234566334382169,
+  "broad_collision_screen": {
+    "unresolved_part_intersections": [],
+    "cable_routing_envelope_contacts": [
+      {
+        "part_a": "RotatingTurretPlate",
+        "part_b": "YawCableServiceLoopEnvelope",
+        "overlap_mm3": 6891.868883812611
+      }
+    ],
+    "intentional_pitch_path_pairs": [
+      [
+        "DrivePulleyPitchEnvelope",
+        "BeltInsideEnvelope"
+      ],
+      [
+        "DrivePulleyPitchEnvelope",
+        "BeltReturnEnvelope"
+      ],
+      [
+        "IdlerPulleyPitchEnvelope",
+        "BeltInsideEnvelope"
+      ],
+      [
+        "IdlerPulleyPitchEnvelope",
+        "BeltReturnEnvelope"
+      ],
+      [
+        "PitchStage1Belt",
+        "PitchMotor20"
+      ],
+      [
+        "PitchStage1Belt",
+        "PitchJack40"
+      ],
+      [
+        "PitchStage2Belt",
+        "PitchJack20"
+      ],
+      [
+        "PitchStage2Belt",
+        "PitchOutput80"
+      ],
+      [
+        "YawStage1Belt",
+        "YawMotor20"
+      ],
+      [
+        "YawStage1Belt",
+        "YawJack30"
+      ],
+      [
+        "YawStage2Belt",
+        "YawJack20"
+      ],
+      [
+        "YawStage2Belt",
+        "YawOutput80"
+      ]
+    ],
+    "threshold_mm3": 0.5,
+    "limitation": "Pose-specific solid screen; supplier flanges, tools, wires and missing interfaces still require full sweep"
+  },
+  "imported_telescope_objects_excluded_from_mass_screen": [
+    "OuterTube",
+    "InnerTube",
+    "FrontShoe_0__8",
+    "FrontShoe_0__8_Screw_0",
+    "FrontShoe_0__8_Washer_0",
+    "FrontShoe_0__8_Nut_0",
+    "FrontShoe_0__8_Screw_1",
+    "FrontShoe_0__8_Washer_1",
+    "FrontShoe_0__8_Nut_1",
+    "FrontShoe_0_8",
+    "FrontShoe_0_8_Screw_0",
+    "FrontShoe_0_8_Washer_0",
+    "FrontShoe_0_8_Nut_0",
+    "FrontShoe_0_8_Screw_1",
+    "FrontShoe_0_8_Washer_1",
+    "FrontShoe_0_8_Nut_1",
+    "FrontShoe_180__8",
+    "FrontShoe_180__8_Screw_0",
+    "FrontShoe_180__8_Washer_0",
+    "FrontShoe_180__8_Nut_0",
+    "FrontShoe_180__8_Screw_1",
+    "FrontShoe_180__8_Washer_1",
+    "FrontShoe_180__8_Nut_1",
+    "FrontShoe_180_8",
+    "FrontShoe_180_8_Screw_0",
+    "FrontShoe_180_8_Washer_0",
+    "FrontShoe_180_8_Nut_0",
+    "FrontShoe_180_8_Screw_1",
+    "FrontShoe_180_8_Washer_1",
+    "FrontShoe_180_8_Nut_1",
+    "FrontShoe_90_0",
+    "FrontShoe_90_0_Screw_0",
+    "FrontShoe_90_0_Washer_0",
+    "FrontShoe_90_0_Nut_0",
+    "FrontShoe_90_0_Screw_1",
+    "FrontShoe_90_0_Washer_1",
+    "FrontShoe_90_0_Nut_1",
+    "FrontShoe_270_0",
+    "FrontShoe_270_0_Screw_0",
+    "FrontShoe_270_0_Washer_0",
+    "FrontShoe_270_0_Nut_0",
+    "FrontShoe_270_0_Screw_1",
+    "FrontShoe_270_0_Washer_1",
+    "FrontShoe_270_0_Nut_1",
+    "RearShoe_0__8",
+    "RearShoe_0__8_Screw_0",
+    "RearShoe_0__8_Washer_0",
+    "RearShoe_0__8_Nut_0",
+    "RearShoe_0__8_Screw_1",
+    "RearShoe_0__8_Washer_1",
+    "RearShoe_0__8_Nut_1",
+    "RearShoe_0_8",
+    "RearShoe_0_8_Screw_0",
+    "RearShoe_0_8_Washer_0",
+    "RearShoe_0_8_Nut_0",
+    "RearShoe_0_8_Screw_1",
+    "RearShoe_0_8_Washer_1",
+    "RearShoe_0_8_Nut_1",
+    "RearShoe_180__8",
+    "RearShoe_180__8_Screw_0",
+    "RearShoe_180__8_Washer_0",
+    "RearShoe_180__8_Nut_0",
+    "RearShoe_180__8_Screw_1",
+    "RearShoe_180__8_Washer_1",
+    "RearShoe_180__8_Nut_1",
+    "RearShoe_180_8",
+    "RearShoe_180_8_Screw_0",
+    "RearShoe_180_8_Washer_0",
+    "RearShoe_180_8_Nut_0",
+    "RearShoe_180_8_Screw_1",
+    "RearShoe_180_8_Washer_1",
+    "RearShoe_180_8_Nut_1",
+    "RearShoe_90_0",
+    "RearShoe_90_0_Screw_0",
+    "RearShoe_90_0_Washer_0",
+    "RearShoe_90_0_Nut_0",
+    "RearShoe_90_0_Screw_1",
+    "RearShoe_90_0_Washer_1",
+    "RearShoe_90_0_Nut_1",
+    "RearShoe_270_0",
+    "RearShoe_270_0_Screw_0",
+    "RearShoe_270_0_Washer_0",
+    "RearShoe_270_0_Nut_0",
+    "RearShoe_270_0_Screw_1",
+    "RearShoe_270_0_Washer_1",
+    "RearShoe_270_0_Nut_1",
+    "DrivePulleyPitchEnvelope",
+    "IdlerPulleyPitchEnvelope",
+    "BeltInsideEnvelope",
+    "BeltReturnEnvelope",
+    "CatcherClamp_bottom",
+    "CatcherClamp_top",
+    "GripperPalm",
+    "PalmContactPad",
+    "Claw_1",
+    "ClawPin_1",
+    "ClawSpacer_1_L",
+    "ClawSpacer_1_R",
+    "Claw_2",
+    "ClawPin_2",
+    "ClawSpacer_2_L",
+    "ClawSpacer_2_R",
+    "Claw_3",
+    "ClawPin_3",
+    "ClawSpacer_3_L",
+    "ClawSpacer_3_R",
+    "GripperServoEnvelope",
+    "CatcherStrut_0",
+    "CatcherStrut_2",
+    "GripperServoCradle",
+    "ServoCradleSpacer_0",
+    "ServoCradleSpacer_1",
+    "ServoRetentionStrap_0",
+    "ServoRetentionStrap_1"
+  ],
+  "remaining_gates": [
+    "Complete supplier-specific hubs, bearings, brake and motors",
+    "Saddle/rail shoe bolt length and wrench access; clamp slip and thin-wall tube proof",
+    "Bearing seats, shaft shoulders, tie-bolt patterns and final access drawings",
+    "Final belt SKU lengths, tension slots, flange/tooth geometry and guards",
+    "Exact added mass/inertia and BOM rebaseline before procurement",
+    "Full robot swept self-collision including cables and brake",
+    "Tube rear support/cable/extension motor bracket final detail"
+  ],
+  "manufacturing_ready": false
+}

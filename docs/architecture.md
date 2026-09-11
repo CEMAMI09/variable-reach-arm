@@ -1,5 +1,13 @@
 # System Architecture — Variable-Reach Catching Arm
 
+> **Review B status:** this original block diagram describes intended modules, not
+> implemented capabilities. The protocol below is historical and replaced by
+> `embedded_protocol.md` (v2:44-byte commands/62-byte telemetry). Motor adapters,
+> true joint feedback, homing, motion execution and three-finger claw actuation are
+> absent; firmware remains locked. Revised geometry/materials are in the shared
+> engineering JSON. No net. No automatic throw. Read current software/electronics
+> review documents for the tested implementation boundary.
+
 ## 1. Overview
 
 ```text

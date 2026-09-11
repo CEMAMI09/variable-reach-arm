@@ -4,6 +4,12 @@
 
 **Document status:** Derived from project specification. Conflicts with budget or physics are resolved in `engineering/calculations.md`.
 
+**Review B override, 2026-09-07:** these speeds are aspirational design requirements,
+not certified operating limits. Geometry now comes from `engineering/design_parameters.json`.
+User requires an actual claw/finger grabber, **no net**. The capture plane and approach
+direction must be calibrated. A3-DOF straight arm has a minimum-radius exclusion zone;
+targets inside it are not made reachable by projecting them to the retracted radius.
+
 ---
 
 ## 1. Objective
@@ -51,7 +57,7 @@ Configuration: \( q = [\theta_y, \theta_p, L] \)
 | Parameter | Min | Target | Max | Unit |
 |-----------|-----|--------|-----|------|
 | Base footprint | — | ≤350×350 | 350×350 | mm |
-| Pivot height \(h\) | 500 | 650 | 800 | mm |
+| Pivot height \(h\) | 850 | **850** | 900 | mm |
 | Retracted reach \(L_{\min}\) | 650 | **700** | 750 | mm |
 | Extended reach \(L_{\max}\) | 1100 | **1200** | 1250 | mm |
 | Extension stroke \(\Delta L\) | — | **500** | — | mm |
@@ -74,7 +80,7 @@ y = L\cos(\theta_p)\sin(\theta_y),\quad
 z = h + L\sin(\theta_p)
 \]
 
-Inverse: \( L = \sqrt{x^2+y^2+(z-h)^2} \) with appropriate \(\theta_y,\theta_p\), clamped to workspace.
+Inverse: \( L = \sqrt{x^2+y^2+(z-h)^2} \) with appropriate \(\theta_y,\theta_p\). Reject workspace violations; never silently clamp an interception target.
 
 ---
 
@@ -151,7 +157,7 @@ Sized with \( \tau = I\alpha + \tau_g + \tau_f \). Controller must know \(L\) be
 
 ### End effector
 
-Forgiving capture: 3 compliant fingers or funnel basket + soft cradle/net.
+Forgiving capture: three mechanically connected single-joint fingers with compliant contact pads and positive retention. No net or fabric pocket. Opening/closing actuation and passive compliance must be tested with the specified ball.
 
 | Spec | Value |
 |------|--------|
@@ -209,8 +215,8 @@ Ballistic model initially; drag optional. Estimator: LS fit / KF / EKF.
 
 ### Reach selection
 
-- If \(L_{req} \le L_{normal}\): remain retracted.
-- If \(L_{normal} < L_{req} \le L_{max}\): extend to \(L_{req} + L_{margin}\) (margin 20–50 mm).
+- If \(L_{req} \le L_{normal}\): remain retracted only if the ball is inside the calibrated gripper capture volume; otherwise search a future reachable crossing or reject.
+- If \(L_{normal} < L_{req} \le L_{max}\): extend only to the required capture plane. A positive radial margin is allowed only within a measured capture depth; it must not displace the grabber away from the ball.
 - If \(L_{req} > L_{max}\): unreachable.
 
 ### Interception

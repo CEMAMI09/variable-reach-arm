@@ -412,6 +412,7 @@ MANIFEST = []
 
 
 def export_all(clean_old: bool = True) -> list[str]:
+    raise RuntimeError('Legacy STL generator is superseded and not manufacturing-qualified. Use build_review_telescope.py for unpowered fit prototypes; read cad/drawings/print_guide.md.')
     global MANIFEST
     MANIFEST = []
 

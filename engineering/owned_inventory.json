@@ -1,0 +1,13 @@
+{
+  "reported_by": "user",
+  "date": "2026-09-07",
+  "owned": {
+    "servo": {"quantity": 1, "model": null, "qualified_for_claw": false},
+    "esp32": {"quantity": 1, "board_model": null, "qualified_for_current_firmware": false},
+    "tools": ["soldering station", "digital multimeter", "computers"],
+    "misc_electronics": "unspecified EE parts; no unverified BOM credit"
+  },
+  "not_owned": ["camera", "power supply", "other controllers", "printing filament"],
+  "mechanical_stock": "little available; budget new purchases",
+  "budget_rule": "ESP32 credited at zero purchase cost; servo credit waits for model and qualification; do not credit unspecified parts"
+}

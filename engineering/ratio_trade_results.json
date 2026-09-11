@@ -1,0 +1,196 @@
+{
+  "status": "48V pull-out graph screen only; no24V or continuous-duty qualification",
+  "curve_source": {
+    "model": "23E1K-20",
+    "source_url": "https://www.omc-stepperonline.com/download/23E1K-20_Torque_Curve.pdf",
+    "inspected_date": "2026-09-07",
+    "method": "Visual reading of manufacturer PDF graph in browser; rounded approximate readings, not raw supplier data",
+    "curve_type": "pull-out torque; not continuous thermal torque",
+    "bus_voltage_v": 48,
+    "phase_current_a": 5,
+    "torque_reading_allowance_nm": 0.05,
+    "rpm_reading_allowance": 10,
+    "points_rpm_nm": [
+      [
+        50,
+        1.69
+      ],
+      [
+        100,
+        1.67
+      ],
+      [
+        150,
+        1.61
+      ],
+      [
+        180,
+        1.58
+      ],
+      [
+        240,
+        1.54
+      ],
+      [
+        300,
+        1.52
+      ],
+      [
+        360,
+        1.45
+      ],
+      [
+        420,
+        1.4
+      ],
+      [
+        480,
+        1.34
+      ]
+    ],
+    "qualification": "Not qualified at24V. Pull-out readings alone do not qualify RMS duty, temperature, driver current convention, regen handling or acceleration. No extrapolation beyond digitized range."
+  },
+  "omitted": "Additional jackshaft/pulley spin inertia, exact belt loss, ratio-dependent packaging and cost",
+  "results": [
+    {
+      "axis": "pitch",
+      "ratio": 4,
+      "motor_rpm": 80.00000000025992,
+      "required_running_torque_nm": 5.42966791847925,
+      "reflected_rotor_inertia_kgm2": 0.0008,
+      "pullout_graph_lower_screen_nm_at_48v": 1.6199999999999999,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "pitch",
+      "ratio": 6,
+      "motor_rpm": 120.00000000038987,
+      "required_running_torque_nm": 3.6214754602033894,
+      "reflected_rotor_inertia_kgm2": 0.0018000000000000002,
+      "pullout_graph_lower_screen_nm_at_48v": 1.56,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "pitch",
+      "ratio": 8,
+      "motor_rpm": 160.00000000051983,
+      "required_running_torque_nm": 2.717888285430625,
+      "reflected_rotor_inertia_kgm2": 0.0032,
+      "pullout_graph_lower_screen_nm_at_48v": 1.53,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "pitch",
+      "ratio": 10,
+      "motor_rpm": 200.0000000006498,
+      "required_running_torque_nm": 2.1761432240591003,
+      "reflected_rotor_inertia_kgm2": 0.005,
+      "pullout_graph_lower_screen_nm_at_48v": 1.49,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "pitch",
+      "ratio": 12,
+      "motor_rpm": 240.00000000077975,
+      "required_running_torque_nm": 1.8153192193881946,
+      "reflected_rotor_inertia_kgm2": 0.007200000000000001,
+      "pullout_graph_lower_screen_nm_at_48v": 1.47,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "pitch",
+      "ratio": 16,
+      "motor_rpm": 320.00000000103967,
+      "required_running_torque_nm": 1.3650527950973126,
+      "reflected_rotor_inertia_kgm2": 0.0128,
+      "pullout_graph_lower_screen_nm_at_48v": 1.4,
+      "passes_48v_graph_screen": true,
+      "qualified": false
+    },
+    {
+      "axis": "pitch",
+      "ratio": 20,
+      "motor_rpm": 400.0000000012996,
+      "required_running_torque_nm": 1.0957074275070502,
+      "reflected_rotor_inertia_kgm2": 0.02,
+      "pullout_graph_lower_screen_nm_at_48v": 1.3499999999999999,
+      "passes_48v_graph_screen": true,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 4,
+      "motor_rpm": 80.00000000025992,
+      "required_running_torque_nm": 4.349835789336948,
+      "reflected_rotor_inertia_kgm2": 0.0008,
+      "pullout_graph_lower_screen_nm_at_48v": 1.6199999999999999,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 6,
+      "motor_rpm": 120.00000000038987,
+      "required_running_torque_nm": 2.9018297809490767,
+      "reflected_rotor_inertia_kgm2": 0.0018000000000000002,
+      "pullout_graph_lower_screen_nm_at_48v": 1.56,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 8,
+      "motor_rpm": 160.00000000051983,
+      "required_running_torque_nm": 2.178408553172474,
+      "reflected_rotor_inertia_kgm2": 0.0032,
+      "pullout_graph_lower_screen_nm_at_48v": 1.53,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 10,
+      "motor_rpm": 200.0000000006498,
+      "required_running_torque_nm": 1.7448212376403793,
+      "reflected_rotor_inertia_kgm2": 0.005,
+      "pullout_graph_lower_screen_nm_at_48v": 1.49,
+      "passes_48v_graph_screen": false,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 12,
+      "motor_rpm": 240.00000000077975,
+      "required_running_torque_nm": 1.4561508782305383,
+      "reflected_rotor_inertia_kgm2": 0.007200000000000001,
+      "pullout_graph_lower_screen_nm_at_48v": 1.47,
+      "passes_48v_graph_screen": true,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 16,
+      "motor_rpm": 320.00000000103967,
+      "required_running_torque_nm": 1.096185593594237,
+      "reflected_rotor_inertia_kgm2": 0.0128,
+      "pullout_graph_lower_screen_nm_at_48v": 1.4,
+      "passes_48v_graph_screen": true,
+      "qualified": false
+    },
+    {
+      "axis": "yaw",
+      "ratio": 20,
+      "motor_rpm": 400.0000000012996,
+      "required_running_torque_nm": 0.8811372650801896,
+      "reflected_rotor_inertia_kgm2": 0.02,
+      "pullout_graph_lower_screen_nm_at_48v": 1.3499999999999999,
+      "passes_48v_graph_screen": true,
+      "qualified": false
+    }
+  ]
+}

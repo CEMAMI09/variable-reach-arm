@@ -1,0 +1,4 @@
+# Optional image detection dependencies tested together in the local QA venv.
+# Core kinematics/planning/estimation/simulation tests use the standard library.
+numpy==2.5.3
+opencv-python==5.0.0.93

@@ -1,43 +1,47 @@
-# Integration Procedure
+# Integration and release checklist — Rev B
+
+**Not released for powered autonomous operation.** Full CAD, simulation and a
+compiled Teensy target do not close these interfaces. Follow docs/bringup.md for
+work possible now and docs/safety.md for physical stop requirements.
 
 ## Mechanical
 
-1. Base leveled; column plumb.
-2. Yaw bearing preload: free rotation, minimal play.
-3. Pitch shaft alignment; boom clamps torque-limited (protect CF).
-4. Extension belt tension; verify active retract.
-5. Catcher + IR beam alignment; latch open/close.
-6. Cable service loops for full yaw/pitch/extend.
+- Anchored base, braced stock support, separated yaw bearings and coaxial opposed
+  pitch bearings. External trunnions need positive torque retention; no shaft
+  crosses the sliding tube bore.
+- Measured square aluminum stock, retained fixed/moving wear pads, adjustable
+  clearance, accessible belt anchorage/tensioner, both stops and return-belt guard.
+- Three compliant claws with smooth steel pivots, spacers/retainers, spring/tendon
+  paths, actuator mount, travel stops and replaceable pads. No net or fictitious latch.
+- Full yaw/pitch/extension/claw clearance including rear overhang, real pulley
+  flanges, screw heads, connector bodies, cable bend radii and tool access.
+- Independent pitch drop restraint: a motor brake does not catch a boom after
+  downstream belt, hub or structural failure.
 
-## Electrical
+## Electronics and software
 
-1. Star ground at base; e-stop wired NC.
-2. Motor phases / encoder maps documented in `data/calibration/wiring.md`.
-3. Catch sensor, limits, latch on MCU pins per `firmware/include/config.h`.
+- Exact wiring/pin map, current/voltage ratings, rated DC stop/manual reset,
+  independent watchdog/enable, driver-side bus clamp, branch fuses and grounding.
+  Test total-power-loss and USB-reset behavior. GPIO is 3.3 V.
+- Real measured feedback, bounded homing, current/following-error limits,
+  deterministic trajectory execution and measured loop/communication timing.
+- v2 CRC/sequence framing, stale-data handling and qualified session/deadline
+  behavior. Current unsupported commands reject and motion remains locked.
+- Camera exposure timestamps, rectification/extrinsics, bounded stereo skew,
+  valid 3D association and recorded calibration revision.
 
-## Software integration sequence
+## Acceptance order
 
-Follow control development order in requirements §30 / firmware header comment.
+Unpowered fit → logic-only faults → qualified restrained drive → single-axis
+feedback/homing → bounded profiles → simultaneous axes → camera replay/fixture
+tracking → low-energy contained grasp → interception → throwing.
 
-1. Manual low-speed  
-2. Homing  
-3. Position control  
-4. Velocity measurement  
-5. Accel-limited moves  
-6. Multi-axis  
-7. Trajectory tracking  
-8. Dynamic extension  
-9. Vision positioning  
-10. Interception  
-11. Velocity-matched catch  
-12. Throwing  
+Do not skip a stage because another works in simulation. Record failed runs and
+measured criteria. A physical containment barrier is required during high-speed/
+autonomous work; people remain outside the reach and projectile volume.
+Communication, encoder, current, limit or planner faults require the qualified
+safe stop; autonomous motion must not continue.
 
-## Defining demo checklist
-
-- [ ] Case A: catch at ~700 mm without extend  
-- [ ] Case B: predict `L_req > L_normal`, extend, catch  
-- [ ] Case C (stretch): catch → throw  
-
-## Go / no-go
-
-No autonomous catch attempts until: e-stop proven, soft caps on, simulation planner checked, prediction error characterized, barrier optional in place.
+Demonstrate a retracted catch when feasible, partial extension only when needed,
+and rejection beyond feasible workspace/time. Record mouth alignment, positive
+finger retention and a completed safe catch as distinct outcomes.

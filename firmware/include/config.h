@@ -18,12 +18,14 @@
 #define EXT_MIN_MM           0
 #define EXT_MAX_MM           500
 
-/* Initial safety caps (~40% of design) */
-#define YAW_VEL_CAP_MDEG_S   48000
-#define PITCH_VEL_CAP_MDEG_S 48000
-#define EXT_VEL_CAP_MM_S     500
+/* Unqualified commissioning envelope; never a validated performance rating. */
+#define YAW_VEL_CAP_MDEG_S   20000
+#define PITCH_VEL_CAP_MDEG_S 20000
+#define EXT_VEL_CAP_MM_S     150
 
-#define WATCHDOG_MS          100
+#define WATCHDOG_MS          2
+#define FRAME_TIMEOUT_MS      20
+#define SETPOINT_TIMEOUT_MS   50
 #define HOST_TIMEOUT_MS      200
 
 #define PIN_ESTOP_SENSE      2

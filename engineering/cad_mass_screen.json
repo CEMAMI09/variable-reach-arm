@@ -1,0 +1,1227 @@
+{
+  "status": "solid-volume screen; density and servo allowances, not measured masses",
+  "groups": {
+    "front_guide": {
+      "mass_kg": 0.017143874469250073,
+      "first_moment_kgm": 0.008400498489932537,
+      "parts": [
+        {
+          "name": "FrontShoe_0__8",
+          "mass_kg": 0.0010056819662409282,
+          "density_assumed": 1420
+        },
+        {
+          "name": "FrontShoe_0__8_Screw_0",
+          "mass_kg": 0.00037534806547294706,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0__8_Washer_0",
+          "mass_kg": 2.064167745078063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0__8_Nut_0",
+          "mass_kg": 0.00013258047972664825,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0__8_Screw_1",
+          "mass_kg": 0.0003753480654729468,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0__8_Washer_1",
+          "mass_kg": 2.064167745078063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0__8_Nut_1",
+          "mass_kg": 0.00013258047972664825,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0_8",
+          "mass_kg": 0.0010056819662409282,
+          "density_assumed": 1420
+        },
+        {
+          "name": "FrontShoe_0_8_Screw_0",
+          "mass_kg": 0.000375348065472947,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0_8_Washer_0",
+          "mass_kg": 2.0641677450780627e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0_8_Nut_0",
+          "mass_kg": 0.00013258047972664823,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0_8_Screw_1",
+          "mass_kg": 0.0003753480654729468,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0_8_Washer_1",
+          "mass_kg": 2.064167745078063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_0_8_Nut_1",
+          "mass_kg": 0.00013258047972664823,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180__8",
+          "mass_kg": 0.0010056819662409282,
+          "density_assumed": 1420
+        },
+        {
+          "name": "FrontShoe_180__8_Screw_0",
+          "mass_kg": 0.0003753480654729468,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180__8_Washer_0",
+          "mass_kg": 2.064167745078063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180__8_Nut_0",
+          "mass_kg": 0.00013258047972664825,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180__8_Screw_1",
+          "mass_kg": 0.0003753480654729468,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180__8_Washer_1",
+          "mass_kg": 2.064167745078063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180__8_Nut_1",
+          "mass_kg": 0.00013258047972664825,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180_8",
+          "mass_kg": 0.0010056819662409282,
+          "density_assumed": 1420
+        },
+        {
+          "name": "FrontShoe_180_8_Screw_0",
+          "mass_kg": 0.0003753480654729468,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180_8_Washer_0",
+          "mass_kg": 2.064167745078063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180_8_Nut_0",
+          "mass_kg": 0.00013258047972664825,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180_8_Screw_1",
+          "mass_kg": 0.0003753480654729468,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180_8_Washer_1",
+          "mass_kg": 2.0641677450780627e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_180_8_Nut_1",
+          "mass_kg": 0.00013258047972664825,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_90_0",
+          "mass_kg": 0.0033891519662409297,
+          "density_assumed": 1420
+        },
+        {
+          "name": "FrontShoe_90_0_Screw_0",
+          "mass_kg": 0.0003753480654729479,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_90_0_Washer_0",
+          "mass_kg": 2.0641677450778954e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_90_0_Nut_0",
+          "mass_kg": 0.0001325804797266474,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_90_0_Screw_1",
+          "mass_kg": 0.0003753480654729476,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_90_0_Washer_1",
+          "mass_kg": 2.0641677450778954e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_90_0_Nut_1",
+          "mass_kg": 0.00013258047972664736,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_270_0",
+          "mass_kg": 0.0033891519662409293,
+          "density_assumed": 1420
+        },
+        {
+          "name": "FrontShoe_270_0_Screw_0",
+          "mass_kg": 0.0003753480654729476,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_270_0_Washer_0",
+          "mass_kg": 2.0641677450778954e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_270_0_Nut_0",
+          "mass_kg": 0.00013258047972664736,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_270_0_Screw_1",
+          "mass_kg": 0.0003753480654729476,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_270_0_Washer_1",
+          "mass_kg": 2.0641677450778954e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "FrontShoe_270_0_Nut_1",
+          "mass_kg": 0.0001325804797266474,
+          "density_assumed": 7850
+        }
+      ],
+      "com_x_m": 0.49000000000000005
+    },
+    "rear": {
+      "mass_kg": 0.05507160124568059,
+      "first_moment_kgm": -0.011772161877163793,
+      "parts": [
+        {
+          "name": "RearShoe_0__8",
+          "mass_kg": 0.0010655851009773317,
+          "density_assumed": 1420
+        },
+        {
+          "name": "RearShoe_0__8_Screw_0",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0__8_Washer_0",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0__8_Nut_0",
+          "mass_kg": 0.00013258047972664847,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0__8_Screw_1",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0__8_Washer_1",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0__8_Nut_1",
+          "mass_kg": 0.00013258047972664841,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0_8",
+          "mass_kg": 0.0010655851009773315,
+          "density_assumed": 1420
+        },
+        {
+          "name": "RearShoe_0_8_Screw_0",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0_8_Washer_0",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0_8_Nut_0",
+          "mass_kg": 0.0001325804797266485,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0_8_Screw_1",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0_8_Washer_1",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_0_8_Nut_1",
+          "mass_kg": 0.00013258047972664841,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180__8",
+          "mass_kg": 0.0010655851009773317,
+          "density_assumed": 1420
+        },
+        {
+          "name": "RearShoe_180__8_Screw_0",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180__8_Washer_0",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180__8_Nut_0",
+          "mass_kg": 0.00013258047972664847,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180__8_Screw_1",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180__8_Washer_1",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180__8_Nut_1",
+          "mass_kg": 0.00013258047972664841,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180_8",
+          "mass_kg": 0.0010655851009773315,
+          "density_assumed": 1420
+        },
+        {
+          "name": "RearShoe_180_8_Screw_0",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180_8_Washer_0",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180_8_Nut_0",
+          "mass_kg": 0.0001325804797266485,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180_8_Screw_1",
+          "mass_kg": 0.00037534806547294836,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180_8_Washer_1",
+          "mass_kg": 2.0641677450778036e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_180_8_Nut_1",
+          "mass_kg": 0.00013258047972664841,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_90_0",
+          "mass_kg": 0.0034490551009773406,
+          "density_assumed": 1420
+        },
+        {
+          "name": "RearShoe_90_0_Screw_0",
+          "mass_kg": 0.0003753480654729491,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_90_0_Washer_0",
+          "mass_kg": 2.0641677450778967e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_90_0_Nut_0",
+          "mass_kg": 0.00013258047972664755,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_90_0_Screw_1",
+          "mass_kg": 0.0003753480654729492,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_90_0_Washer_1",
+          "mass_kg": 2.0641677450778967e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_90_0_Nut_1",
+          "mass_kg": 0.0001325804797266475,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_270_0",
+          "mass_kg": 0.0034490551009773406,
+          "density_assumed": 1420
+        },
+        {
+          "name": "RearShoe_270_0_Screw_0",
+          "mass_kg": 0.0003753480654729491,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_270_0_Washer_0",
+          "mass_kg": 2.064167745077897e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_270_0_Nut_0",
+          "mass_kg": 0.00013258047972664755,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_270_0_Screw_1",
+          "mass_kg": 0.0003753480654729491,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_270_0_Washer_1",
+          "mass_kg": 2.064167745077897e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "RearShoe_270_0_Nut_1",
+          "mass_kg": 0.0001325804797266475,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Screw__22_0__8",
+          "mass_kg": 0.0004340424410199664,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Washer__22_0__8",
+          "mass_kg": 2.0641677450778063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Nut__22_0__8",
+          "mass_kg": 0.0001305335750332009,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Screw__22_0_8",
+          "mass_kg": 0.0004340424410199663,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Washer__22_0_8",
+          "mass_kg": 2.0641677450778063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Nut__22_0_8",
+          "mass_kg": 0.0001305335750332009,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Screw__9_0__8",
+          "mass_kg": 0.0004340424410199664,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Washer__9_0__8",
+          "mass_kg": 2.0641677450778063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Nut__9_0__8",
+          "mass_kg": 0.00013053357503320094,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Screw__9_0_8",
+          "mass_kg": 0.0004340424410199663,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Washer__9_0_8",
+          "mass_kg": 2.0641677450778063e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "AnchorM2Nut__9_0_8",
+          "mass_kg": 0.0001305335750332009,
+          "density_assumed": 7850
+        },
+        {
+          "name": "StopPadRear__1",
+          "mass_kg": 0.00011587500000000005,
+          "density_assumed": 1250
+        },
+        {
+          "name": "StopPadFront__1",
+          "mass_kg": 0.00011587500000000002,
+          "density_assumed": 1250
+        },
+        {
+          "name": "StopPadRear_1",
+          "mass_kg": 0.00011587500000000005,
+          "density_assumed": 1250
+        },
+        {
+          "name": "StopPadFront_1",
+          "mass_kg": 0.00011587500000000002,
+          "density_assumed": 1250
+        },
+        {
+          "name": "RearAnchorPlug",
+          "mass_kg": 0.021338906926737542,
+          "density_assumed": 1250
+        },
+        {
+          "name": "RearAnchorMetalCap",
+          "mass_kg": 0.010312712228170868,
+          "density_assumed": 7850
+        },
+        {
+          "name": "PlugM3Nut_0",
+          "mass_kg": 0.0003513583154320885,
+          "density_assumed": 7850
+        },
+        {
+          "name": "PlugM3Washer_0",
+          "mass_kg": 9.040906754426802e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "PlugM3Screw_0",
+          "mass_kg": 0.0011143916365675965,
+          "density_assumed": 7850
+        },
+        {
+          "name": "PlugM3Nut_1",
+          "mass_kg": 0.0003513583154320885,
+          "density_assumed": 7850
+        },
+        {
+          "name": "PlugM3Washer_1",
+          "mass_kg": 9.040906754426802e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "PlugM3Screw_1",
+          "mass_kg": 0.0011143916365675965,
+          "density_assumed": 7850
+        }
+      ],
+      "com_x_m": -0.21376102402846175
+    },
+    "idler": {
+      "mass_kg": 0.13497737286656303,
+      "first_moment_kgm": 0.07088609302977122,
+      "parts": [
+        {
+          "name": "IdlerPulleyPitchEnvelope",
+          "mass_kg": 0.005402301553127281,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerClamp_bottom",
+          "mass_kg": 0.02135764174135363,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerClamp_top",
+          "mass_kg": 0.05298490366907058,
+          "density_assumed": 1250
+        },
+        {
+          "name": "Idler625Bearing__1",
+          "mass_kg": 0.007121008797983812,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerBearingCap__1",
+          "mass_kg": 0.0041434296018615325,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerCapBolt__1_530",
+          "mass_kg": 0.0011450304705256755,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerCapNut__1_530",
+          "mass_kg": 0.0005855971923868157,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerCapBolt__1_559",
+          "mass_kg": 0.0011450304705256755,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerCapNut__1_559",
+          "mass_kg": 0.0005855971923868159,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerInnerRaceSpacer__1",
+          "mass_kg": 0.00046844523677126596,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerShaftCollar__1",
+          "mass_kg": 0.001017102009873064,
+          "density_assumed": 1250
+        },
+        {
+          "name": "Idler625Bearing_1",
+          "mass_kg": 0.007121008797983812,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerBearingCap_1",
+          "mass_kg": 0.0041434296018615325,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerCapBolt_1_530",
+          "mass_kg": 0.001145030470525676,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerCapNut_1_530",
+          "mass_kg": 0.0005855971923868157,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerCapBolt_1_559",
+          "mass_kg": 0.001145030470525676,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerCapNut_1_559",
+          "mass_kg": 0.0005855971923868159,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerInnerRaceSpacer_1",
+          "mass_kg": 0.00046844523677126596,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerShaftCollar_1",
+          "mass_kg": 0.001017102009873064,
+          "density_assumed": 1250
+        },
+        {
+          "name": "IdlerShaft5",
+          "mass_kg": 0.006165375582669947,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampBolt_496__30_05",
+          "mass_kg": 0.0027141463005053083,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampWasher_496__30_05",
+          "mass_kg": 0.0002996372533177609,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampNut_496__30_05",
+          "mass_kg": 0.0011473835401050023,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampBolt_496_30_05",
+          "mass_kg": 0.0027141463005053083,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampWasher_496_30_05",
+          "mass_kg": 0.0002996372533177609,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampNut_496_30_05",
+          "mass_kg": 0.0011473835401050033,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampBolt_514__30_05",
+          "mass_kg": 0.0027141463005052996,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampWasher_514__30_05",
+          "mass_kg": 0.0002996372533177599,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampNut_514__30_05",
+          "mass_kg": 0.0011473835401050116,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampBolt_514_30_05",
+          "mass_kg": 0.0027141463005052996,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampWasher_514_30_05",
+          "mass_kg": 0.0002996372533177599,
+          "density_assumed": 7850
+        },
+        {
+          "name": "IdlerClampNut_514_30_05",
+          "mass_kg": 0.0011473835401050124,
+          "density_assumed": 7850
+        }
+      ],
+      "com_x_m": 0.5251701935245721
+    },
+    "min_stop": {
+      "mass_kg": 0.08203097104212673,
+      "first_moment_kgm": -0.019144436205836595,
+      "parts": [
+        {
+          "name": "MinimumPinCap__1",
+          "mass_kg": 0.004613313033057341,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumStopPin__1",
+          "mass_kg": 0.0017031850047125778,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapNut__1_3",
+          "mass_kg": 0.0003513583154320895,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapScrew__1_3",
+          "mass_kg": 0.0010034148760795364,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapNut__1_21",
+          "mass_kg": 0.0003513583154320895,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapScrew__1_21",
+          "mass_kg": 0.0010034148760795364,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumPinCap_1",
+          "mass_kg": 0.004613313033057341,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumStopPin_1",
+          "mass_kg": 0.0017031850047125778,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapNut_1_3",
+          "mass_kg": 0.0003513583154320895,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapScrew_1_3",
+          "mass_kg": 0.0010034148760795364,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapNut_1_21",
+          "mass_kg": 0.0003513583154320895,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCapScrew_1_21",
+          "mass_kg": 0.0010034148760795364,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumStopCollarLower",
+          "mass_kg": 0.02333300199011842,
+          "density_assumed": 1250
+        },
+        {
+          "name": "MinimumStopCollarUpper",
+          "mass_kg": 0.020613224932125765,
+          "density_assumed": 1250
+        },
+        {
+          "name": "MinimumCollarBolt_0_0",
+          "mass_kg": 0.0031813338006577074,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherTop_0_0",
+          "mass_kg": 0.00029963725331776873,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherBottom_0_0",
+          "mass_kg": 0.00029963725331776873,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarNut_0_0",
+          "mass_kg": 0.0007343254656672108,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarBolt_0_1",
+          "mass_kg": 0.004167793893884903,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherTop_0_1",
+          "mass_kg": 0.0002996372533177544,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherBottom_0_1",
+          "mass_kg": 0.0002996372533177686,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarNut_0_1",
+          "mass_kg": 0.0007343254656672115,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarBolt_1_0",
+          "mass_kg": 0.0031813338006577074,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherTop_1_0",
+          "mass_kg": 0.00029963725331776873,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherBottom_1_0",
+          "mass_kg": 0.00029963725331776873,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarNut_1_0",
+          "mass_kg": 0.0007343254656672108,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarBolt_1_1",
+          "mass_kg": 0.004167793893884903,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherTop_1_1",
+          "mass_kg": 0.0002996372533177544,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarWasherBottom_1_1",
+          "mass_kg": 0.0002996372533177686,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MinimumCollarNut_1_1",
+          "mass_kg": 0.0007343254656672116,
+          "density_assumed": 7850
+        }
+      ],
+      "com_x_m": -0.23338058738820774
+    },
+    "max_stop": {
+      "mass_kg": 0.08005805085567241,
+      "first_moment_kgm": 0.022986456128077953,
+      "parts": [
+        {
+          "name": "MaximumPinCap__1",
+          "mass_kg": 0.004613313033057341,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumStopPin__1",
+          "mass_kg": 0.0017031850047125822,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapNut__1_3",
+          "mass_kg": 0.00035135831543208883,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapScrew__1_3",
+          "mass_kg": 0.0010034148760795357,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapNut__1_21",
+          "mass_kg": 0.00035135831543208883,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapScrew__1_21",
+          "mass_kg": 0.0010034148760795357,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumPinCap_1",
+          "mass_kg": 0.004613313033057341,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumStopPin_1",
+          "mass_kg": 0.0017031850047125822,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapNut_1_3",
+          "mass_kg": 0.00035135831543208883,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapScrew_1_3",
+          "mass_kg": 0.0010034148760795357,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapNut_1_21",
+          "mass_kg": 0.00035135831543208883,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCapScrew_1_21",
+          "mass_kg": 0.0010034148760795357,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumStopCollarLower",
+          "mass_kg": 0.023333001990118424,
+          "density_assumed": 1250
+        },
+        {
+          "name": "MaximumStopCollarUpper",
+          "mass_kg": 0.020613224932125772,
+          "density_assumed": 1250
+        },
+        {
+          "name": "MaximumCollarBolt_0_0",
+          "mass_kg": 0.0031813338006577083,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherTop_0_0",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherBottom_0_0",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarNut_0_0",
+          "mass_kg": 0.0007343254656672053,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarBolt_0_1",
+          "mass_kg": 0.0031813338006577083,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherTop_0_1",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherBottom_0_1",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarNut_0_1",
+          "mass_kg": 0.0007343254656672055,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarBolt_1_0",
+          "mass_kg": 0.0031813338006577083,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherTop_1_0",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherBottom_1_0",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarNut_1_0",
+          "mass_kg": 0.0007343254656672051,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarBolt_1_1",
+          "mass_kg": 0.0031813338006577083,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherTop_1_1",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarWasherBottom_1_1",
+          "mass_kg": 0.00029963725331776943,
+          "density_assumed": 7850
+        },
+        {
+          "name": "MaximumCollarNut_1_1",
+          "mass_kg": 0.0007343254656672057,
+          "density_assumed": 7850
+        }
+      ],
+      "com_x_m": 0.287122355370825
+    },
+    "catcher": {
+      "mass_kg": 0.14428194590303,
+      "first_moment_kgm": 0.0859437646720552,
+      "parts": [
+        {
+          "name": "CatcherClamp_bottom",
+          "mass_kg": 0.007843729241353672,
+          "density_assumed": 1250
+        },
+        {
+          "name": "CatcherClamp_top",
+          "mass_kg": 0.007843729241353672,
+          "density_assumed": 1250
+        },
+        {
+          "name": "GripperPalm",
+          "mass_kg": 0.033249442657552,
+          "density_assumed": 1250
+        },
+        {
+          "name": "PalmContactPad",
+          "mass_kg": 0.014911693304017032,
+          "density_assumed": 1250
+        },
+        {
+          "name": "Claw_1",
+          "mass_kg": 0.013823737940631329,
+          "density_assumed": 1250
+        },
+        {
+          "name": "ClawPin_1",
+          "mass_kg": 0.0013872095061007465,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpacer_1_L",
+          "mass_kg": 5.7458472997096024e-05,
+          "density_assumed": 1420
+        },
+        {
+          "name": "ClawStopEyePin_1",
+          "mass_kg": 0.00045663638480199903,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringCoil_1",
+          "mass_kg": 9.571698832308082e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringWasher_1_0",
+          "mass_kg": 3.176401500191577e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringWasher_1_1",
+          "mass_kg": 3.176401500191577e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawWorkingTendon_1",
+          "mass_kg": 1.00580644536233e-05,
+          "density_assumed": 1250
+        },
+        {
+          "name": "Claw_2",
+          "mass_kg": 0.013823737940631327,
+          "density_assumed": 1250
+        },
+        {
+          "name": "ClawPin_2",
+          "mass_kg": 0.0013872095061007426,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpacer_2_L",
+          "mass_kg": 5.745847299709584e-05,
+          "density_assumed": 1420
+        },
+        {
+          "name": "ClawStopEyePin_2",
+          "mass_kg": 0.00045663638480199995,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringCoil_2",
+          "mass_kg": 9.57169883230815e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringWasher_2_0",
+          "mass_kg": 3.176401500191626e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringWasher_2_1",
+          "mass_kg": 3.176401500191578e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawWorkingTendon_2",
+          "mass_kg": 1.0058064453623312e-05,
+          "density_assumed": 1250
+        },
+        {
+          "name": "Claw_3",
+          "mass_kg": 0.013823737940631346,
+          "density_assumed": 1250
+        },
+        {
+          "name": "ClawPin_3",
+          "mass_kg": 0.0013872095061007448,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpacer_3_L",
+          "mass_kg": 5.745847299709582e-05,
+          "density_assumed": 1420
+        },
+        {
+          "name": "ClawStopEyePin_3",
+          "mass_kg": 0.00045663638480199974,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringCoil_3",
+          "mass_kg": 9.571698832308135e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringWasher_3_0",
+          "mass_kg": 3.1764015001915674e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawSpringWasher_3_1",
+          "mass_kg": 3.176401500191555e-05,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ClawWorkingTendon_3",
+          "mass_kg": 1.0058064453623276e-05,
+          "density_assumed": 1250
+        },
+        {
+          "name": "GripperServoEnvelope",
+          "mass_kg": 0.02,
+          "density_assumed": 1250
+        },
+        {
+          "name": "CatcherStrut_0",
+          "mass_kg": 0.0021911127546544837,
+          "density_assumed": 1250
+        },
+        {
+          "name": "CatcherStrut_2",
+          "mass_kg": 0.0021781514843386123,
+          "density_assumed": 1250
+        },
+        {
+          "name": "GripperServoCradle",
+          "mass_kg": 0.006221744512019419,
+          "density_assumed": 1250
+        },
+        {
+          "name": "ServoCradleSpacer_0",
+          "mass_kg": 0.0008862727400088065,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ServoCradleSpacer_1",
+          "mass_kg": 0.0008862727400088065,
+          "density_assumed": 7850
+        },
+        {
+          "name": "ServoRetentionStrap_0",
+          "mass_kg": 0.00019338053289415336,
+          "density_assumed": 1250
+        },
+        {
+          "name": "ServoRetentionStrap_1",
+          "mass_kg": 0.00019338053289415336,
+          "density_assumed": 1250
+        }
+      ],
+      "com_x_m": 0.5956654114563776
+    }
+  }
+}

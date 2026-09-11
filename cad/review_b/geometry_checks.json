@@ -1,0 +1,41 @@
+[
+  {
+    "extension_mm": 0,
+    "overlap_mm": 740.0,
+    "guide_span_mm": 690.0,
+    "valid_shapes": 116,
+    "inner_outer_intersection_mm3": 0.0,
+    "claw_palm_intersections_mm3": {
+      "Claw_1": 0.0,
+      "Claw_2": 0.0,
+      "Claw_3": 0.0
+    },
+    "release": "study only; guide hardware now modeled; belt anchorage, stops, actuation and full collision sweep remain open"
+  },
+  {
+    "extension_mm": 250,
+    "overlap_mm": 490.0,
+    "guide_span_mm": 440.0,
+    "valid_shapes": 116,
+    "inner_outer_intersection_mm3": 0.0,
+    "claw_palm_intersections_mm3": {
+      "Claw_1": 0.0,
+      "Claw_2": 0.0,
+      "Claw_3": 0.0
+    },
+    "release": "study only; guide hardware now modeled; belt anchorage, stops, actuation and full collision sweep remain open"
+  },
+  {
+    "extension_mm": 500,
+    "overlap_mm": 240.0,
+    "guide_span_mm": 190.0,
+    "valid_shapes": 116,
+    "inner_outer_intersection_mm3": 0.0,
+    "claw_palm_intersections_mm3": {
+      "Claw_1": 0.0,
+      "Claw_2": 0.0,
+      "Claw_3": 0.0
+    },
+    "release": "study only; guide hardware now modeled; belt anchorage, stops, actuation and full collision sweep remain open"
+  }
+]

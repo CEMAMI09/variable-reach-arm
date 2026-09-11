@@ -5,7 +5,7 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass
 
-from host.kinematics.arm_kinematics import ArmLimits, JointState, Pose, forward
+from host.kinematics.arm_kinematics import ArmLimits, JointState, Pose, forward, tip_velocity
 from host.trajectories.quintic import multi_axis_quintic
 
 
@@ -25,8 +25,14 @@ def plan_throw_toward(
     lim: ArmLimits | None = None,
     duration: float = 0.45,
 ) -> ThrowPlan:
-    """Heuristic: swing toward target azimuth/elevation and release near peak speed."""
-    lim = lim or ArmLimits()
+    """DISABLED: no qualified retention/release mechanism or inverse-ballistic solver."""
+    raise NotImplementedError('Throwing is not qualified: requires release mechanism, ballistic solution, limits and stop validation')
+
+
+def preview_swing(target: Pose, q_start: JointState, lim: ArmLimits | None = None,
+                  duration: float = 0.45) -> ThrowPlan:
+    """Offline visualization ONLY; does not imply target will be hit or motion is feasible."""
+    lim = lim or ArmLimits.from_design_file()
     yaw = math.atan2(target.y, target.x)
     pitch = math.radians(35)
     L = min(lim.L_max, max(lim.L_normal, 0.9))
@@ -39,6 +45,9 @@ def plan_throw_toward(
     # Sample mid-late for release
     t_rel = 0.7 * duration
     samples = [s.sample(t_rel) for s in segs]
-    speed = math.sqrt(sum(v * v for _, v, _ in samples))
-    pose = forward(q_rel, lim)
-    return ThrowPlan(q_start, q_rel, duration, t_rel, pose, speed)
+    actual = JointState(*(q for q,_,_ in samples))
+    rates = JointState(*(v for _,v,_ in samples))
+    velocity = tip_velocity(actual,rates)
+    speed = math.sqrt(velocity.x**2+velocity.y**2+velocity.z**2)
+    pose = forward(actual, lim)
+    return ThrowPlan(q_start, actual, duration, t_rel, pose, speed)

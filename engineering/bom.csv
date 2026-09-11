@@ -1,38 +1,36 @@
-item,qty,component,spec,unit_price_usd,ext_price_usd,supplier,mass_g,purpose
-1,1,Base plate aluminum,300x300x6mm 6061 plate,28,28,OnlineMetals / local,1450,Fixed base footprint
-2,4,Rubber feet,M6 leveling feet,3,12,Amazon,80,Bench mount
-3,2,NEMA23 closed-loop stepper,MKS SERVO57C or equiv 2.2Nm peak + driver,55,110,AliExpress / Amazon,700,Yaw and pitch actuators
-4,1,NEMA17 closed-loop stepper,MKS SERVO42C or equiv,35,35,AliExpress / Amazon,350,Extension actuator
-5,1,Teensy 4.1,ARM Cortex-M7 MCU,32,32,PJRC,15,Real-time controller
-6,1,24V 15A PSU,Mean Well LRS-350-24 or equiv,38,38,DigiKey / Amazon,700,Motor bus power
-7,1,DC-DC 24V to 5V,5A buck module,8,8,Amazon,25,Logic / USB hub / sensors
-8,1,E-stop mushroom + NC contact,22mm industrial e-stop,12,12,Amazon,80,Hardware motor-power cut
-9,1,Automotive relay or contactor,24V coil 20A+ contacts,10,10,Amazon,50,E-stop power interrupt
-10,4,Deep groove bearing 6001-2RS,12x28x8mm,2.5,10,McMaster / Amazon,20,Yaw and pitch shafts
-11,2,Thrust bearing or flange washer set,For yaw axial load,4,8,McMaster,30,Yaw axial support
-12,1,Pitch shaft,Steel rod 12mm x 120mm,6,6,OnlineMetals,110,Pitch axis
-13,1,Yaw shaft / turret tube,Steel or Al tube for yaw,8,8,OnlineMetals,200,Yaw structure
-14,1,CF outer tube,OD40mm ID36mm L=750mm,35,35,DragonPlate / Ali CF,290,Outer boom
-15,1,CF inner tube,OD32mm ID28mm L=750mm,30,30,DragonPlate / Ali CF,230,Telescoping boom
-16,1,HTD5 belt kit pitch,Pulleys 20T/160T + belt + tensioner,22,22,SDP-SI / Amazon,120,Pitch 8:1 reduction
-17,1,HTD5 belt kit yaw,Pulleys 20T/120T + belt + tensioner,20,20,SDP-SI / Amazon,110,Yaw 6:1 reduction
-18,1,GT2 extension belt set,2m GT2 6mm + 36T pulley + idlers,12,12,Amazon,40,Extension drive Option A
-19,1,Pitch gas spring or torsion springs,~50-80N counterbalance approx,15,15,McMaster / Amazon,150,Pitch gravity assist
-20,1,Limit switches,2x mechanical or optical for extension,4,8,Amazon,20,Home and max extension
-21,1,IR break-beam pair,3mm IR LED + phototransistor,3,3,Adafruit / Amazon,5,Catch confirmation
-22,1,Micro servo 9g,SG90 metal-gear preferred,5,5,Amazon,9,Ball retention latch
-23,1,TPU filament 95A,1kg roll (partial use),22,22,Amazon,140,Catcher fingers / funnel
-24,1,PETG filament,1kg roll (partial use),18,18,Amazon,400,Mounts guides brackets
-25,1,UHMW tape / Delrin stock,Guide surfaces,10,10,McMaster,30,Low-friction guides
-26,1,Fastener kit,M3/M4/M5 screws inserts washers,20,20,Amazon,200,Assembly
-27,20,Heat-set inserts,M3 and M4 brass,0.2,4,Amazon,15,Printed part threads
-28,1,Wire cable sleeving,Silicone wire 18/22 AWG + loom,15,15,Amazon,100,Power and signal
-29,1,Protoboard / custom carrier,MCU breakout + connectors,8,8,Amazon,30,Electronics mounting
-30,1,USB camera primary,>=60FPS 720p color (ELP or equiv),35,35,Amazon,80,Phase 2 vision
-31,1,USB camera secondary,Matching camera for stereo,35,35,Amazon,80,Phase 3 stereo
-32,1,Foam practice balls,70mm soft foam 6-pack,10,10,Amazon,50,Target objects
-33,1,Acrylic shield panel,Optional 3mm barrier sheet,20,20,Local plastics,800,High-speed test guard
-34,1,String pot or mag strip optional,Extension backup encoder,25,25,Amazon,40,Optional linear feedback
-35,1,Misc adhesives epoxy Loctite,Assembly consumables,12,12,Hardware store,0,Bonding CF / set screws
-TOTAL,,Sum of ext_price,,,,,449,
-RESERVE,,Budget reserve 10pct target,,51,51,,,"Hard max 500; preferred 300-450 — currently ~449 before reserve; drop second camera until M5 if needed"
+item,qty,component,spec,unit_price_usd,ext_price_usd,stage,price_status,source_or_basis,purpose
+1,1,Outer aluminum tube,6061-T6 1.5in square nominal0.0625in wall 36in stock,26.1,26.1,extension_rig,observed_2026-09-07,https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-062-aluminum-square-tube-6061-t6-extruded/pid/26374,770mm cut length verify actual0.062in wall
+2,1,Inner aluminum tube,6061-T6 1in square nominal0.0625in wall 36in stock,22,22,extension_rig,estimate_unquoted,US metric equivalent must be recalculated,805mm cut length
+3,1,Extension motor encoder driver kit,NEMA17 closed loop exact part NOT SELECTED,70,70,extension_rig,estimate_unquoted,Running torque requirement at1000rpm unverified,Proximal drive
+4,1,Extension belt pulleys and bearings,9mm GT2 belt; two36T metal pulleys; two625 bearings;5mm idler shaft collars; metal clamp cap,30,30,extension_rig,estimate_unquoted,Unquoted allowance; exact belt and pulley ratings pending;625 boundary dimensions5x16x5mm,Bidirectional internal drive run
+5,1,Guide wear stock and shims,Acetal wear stock for12 retained shoes plus clearance shims; printed fit coupons separate,15,15,extension_rig,estimate_unquoted,Small stock purchase,Six front and six rear replaceable wear shoes; do not budget an absent printed carrier
+6,1,Structural printing filament,1kg PETG or ASA spool,24,24,extension_rig,estimate_unquoted,Full spool cash cost not grams used,Housings and fit coupons
+7,1,Standard fasteners and metal inserts,M2 M3 M4 M5 M6 M8 fasteners as applicable; washers locknuts inserts and smooth claw pins,30,30,extension_rig,estimate_unquoted,Pack-purchase allowance; includes24 M2x8 guide screws24 M2 nuts24 thin washers; exact remaining grip lengths pending CAD,Mechanical assembly
+8,1,Control board,Owned ESP32 exact board pending; current firmware target Teensy,0,0,extension_rig,user_owned_2026-09-07,ESP32 firmware port and board-specific timing/pin verification required,Real-time firmware board
+9,1,Motor power supply,24V350W class 14.6A candidate with AC enclosure,45,45,extension_rig,estimate_unquoted,https://www.meanwell.com/Upload/PDF/LRS-350/LRS-350-SPEC.PDF,Shared machine power supply
+10,1,DC logic regulator,24V to5V filtered buck plus input protection,10,10,extension_rig,estimate_unquoted,Confirm input transients,MCU and sensor power
+11,1,Limit and home switch kit,Four NC switches brackets and wire,10,10,extension_rig,estimate_unquoted,Switch currents and logic compatibility to be selected,Homing and end limits
+12,1,Extension rig restraint and bumpers,Bench restraint; four5mm steel stop pins and metal retaining caps; printed split collars and keyed TPU pads,22,22,extension_rig,estimate_unquoted,Unquoted allowance; printed parts use filament lines; single-pin impact proof required,Restrained test setup
+13,1,Hardware E-stop controls,Mushroom NC contacts manual reset and monitor wiring,15,15,shared_safety,estimate_unquoted,Not a safety-certified complete control system,Independent stop request
+14,1,DC-rated contactor,Fuse-coordinated motor-bus interruption candidate,25,25,shared_safety,estimate_unquoted,DC interrupt rating must match selected bus,Motor power removal
+15,1,Regeneration clamp circuit,Overvoltage chopper plus pulse rated resistor and housing,30,30,shared_safety,estimate_unquoted,Design not yet released,Absorb motor regeneration
+16,1,Power wiring and connectors,16AWG trunk 18AWG short branches shielded feedback connector kit,25,25,shared_safety,estimate_unquoted,Current ratings and flex life to verify,Power and signal harness
+17,1,Fuses holders mains enclosure,Fused inlet protective earth insulated terminals enclosure,20,20,shared_safety,estimate_unquoted,Mains assembly needs competent verification,AC and DC protection
+18,1,Logic interface carrier,Encoder receivers optocouplers fault inputs current monitor,18,18,shared_safety,estimate_unquoted,No unprotected5V into3.3V MCU,Driver and sensor integration
+19,2,Yaw and pitch motor driver kits,1-CL57T-P20-V41 candidate2Nm holding exact running curve unqualified,86.6,173.2,rotating_axes,observed_2026-09-07,https://www.omc-stepperonline.com/tp-series-1-axis-closed-loop-stepper-cnc-kit-2-0nm-283-28oz-in-nema-23-motor-driver-1-cl57t-p20-v41,Price reference not approved highspeed selection
+20,1,Pitch reduction hardware,Two-stage HTD5 20to40 plus20to80 shafts bearings hubs belt,45,45,rotating_axes,estimate_unquoted,Belt kit allowance includes metal hubs small pulleys and jackshaft parts; large printed pulley web uses filament line; excludes separately listed6001 bearings,8to1 candidate reduction
+21,1,Yaw reduction hardware,Two-stage HTD5 20to30 plus20to80 shafts bearings hubs belt,40,40,rotating_axes,estimate_unquoted,Two staged belts metal small pulleys and hubs; large printed pulley web uses filament line; excludes separately listed6001 bearings,6to1 candidate reduction matched to full CAD
+22,1,Pitch brake and hold-up,Failsafe normally engaged brake controller energy reserve,45,45,rotating_axes,estimate_unquoted,Exact brake and belt-break retention remain gates,Prevent gravity drop after power loss
+23,6,Pitch and jackshaft bearings,6001-2RS class12mm bore,3,18,rotating_axes,estimate_unquoted,Manufacturer static dynamic speed ratings required,Pitch trunnions and both compound drive shafts
+24,1,Shafts collars hubs and spacers,12mm steel short trunnions plus20mm yaw shaft and collar hardware,38,38,rotating_axes,estimate_unquoted,Ground shaft stock proper axial retention; full CAD rebaseline,Load-bearing purchased hardware
+25,1,Frame stock and bench anchor,850mm shoulder with windowed3mm cheeks and stock-angle stiffeners; column braces base,80,80,rotating_axes,estimate_unquoted,Unquoted stock allowance including raised shoulder; no outsourced machining,Mount stiffness and anti-tip restraint
+26,1,Independent output feedback,Two axis output sensors plus extension position reference,30,30,rotating_axes,estimate_unquoted,Driver motor encoders cannot detect slipped belt or hub,Load-side state verification
+27,1,TPU printing filament,1kg95A spool full cash purchase,24,24,claw,estimate_unquoted,Use coupons to establish impact stroke,Compliant contact pads and bumpers; rigid claw fingers use structural filament
+28,1,Claw actuation and hardware,Small metal gear servo links spring pins breakbeam cable,20,20,claw,estimate_unquoted,Unknown owned servo not yet credited; exact model torque speed travel and current pending; includes metal pins springs tendons retainers,Retention and release
+29,1,Soft practice balls,Specified50g or lighter foam balls batch,10,10,claw,estimate_unquoted,Weigh every tested ball type,Impact tests
+30,2,Cameras,Matched60to120fps low latency cameras candidate,40,80,vision,estimate_unquoted,No verified stereo sync or latency yet,3D perception
+31,1,Vision accessories,Calibration target mounts powered USB hub cables,20,20,vision,estimate_unquoted,Existing host PC assumed,Camera integration
+32,1,Guard enclosure materials,Polycarbonate mesh frame and fasteners allowance,40,40,shared_safety,estimate_unquoted,Not optional for highspeed tests,Segregated test workspace
+33,1,Consumables,Adhesive threadlocker solder heatshrink tie mounts,15,15,extension_rig,estimate_unquoted,Full purchase allowance,Assembly and repair
+34,2,Yaw shaft bearings,6204 class20x47x14mm,4,8,rotating_axes,estimate_unquoted,Full CAD paired20mm yaw bearing envelopes; exact rated SKU pending,Yaw bearing separation and axial retention
+35,1,Claw power regulator,Separate filtered5to6V buck sized for measured servo peak current,8,8,claw,estimate_unquoted,Planning allowance not selected hardware; bus input voltage and servo rail required; no MCU3.3V servo supply,Isolate servo current pulses from MCU rail with common reference and local bulk capacitance

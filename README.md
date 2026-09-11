@@ -2,6 +2,26 @@
 
 Stationary **3-DOF** manipulator with a **telescoping boom** that changes reach during interception of lightweight foam balls.
 
+> **Engineering review B (2026-09-07): NOT a manufacturing or powered-motion release.**
+> The end effector is a **three-finger grabber; no net**. The original CAD, STL files,
+> motor claims and $449 budget were conceptual and are superseded where noted below.
+> Complete-machine ordering remains blocked. Firmware intentionally cannot arm until
+> real drivers, feedback, homing and independent stop hardware are qualified.
+
+Current review entry points:
+
+- `engineering/sizing.py` and `engineering/design_parameters.json`: current SI model.
+- `cad/scripts/build_review_telescope.py` and `claw_gripper.py`: current parametric study.
+- `cad/review_b/`: actual FreeCAD studies, geometry checks and **unpowered fit-only** STLs.
+- `docs/embedded_protocol.md`: matching v2 host/MCU protocol; replaces the old v1 layout.
+- `docs/review_progress.md`: accepted user corrections and review continuity.
+- `docs/safety.md` and `cad/drawings/print_guide.md`: current release restrictions.
+
+Legacy `cad/freecad/VariableReachArm.FCStd`, `cad/stl/`, old STEP and animations are
+retained as historical design evidence. Do not manufacture or infer physical performance
+from them. A valid CAD solid and a successful animation do not establish load paths,
+assembly feasibility, motor capacity or capture success.
+
 ## Quick start
 
 ```bash
@@ -31,7 +51,7 @@ python3 tools/plot_run.py data/experiments/example_run.csv
 
 - `engineering/calculations.md` — results & conflict resolutions
 - `engineering/sizing.py` — reproducible sizing
-- `engineering/bom.csv` — bill of materials (~$449 + reserve)
+- `engineering/bom.csv` — current itemized cost; original rows totaled $701 before reserve
 - `engineering/selections.md` — why each part
 
 ## CAD
@@ -44,4 +64,6 @@ python3 tools/plot_run.py data/experiments/example_run.csv
 
 ## Status
 
-Milestone 0 deliverables: requirements, architecture, calculations, BOM, selections, CAD seed, firmware/host skeletons, simulation, test/bring-up docs.
+Engineering development: revised telescope/gripper studies, reproducible sizing and
+protocol/planner tests. Full mechanical integration and powered hardware qualification
+remain open; consult the engineering report before buying parts.

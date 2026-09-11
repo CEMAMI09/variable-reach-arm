@@ -1,0 +1,24 @@
+item,qty,component,spec,unit_price_usd,ext_price_usd,stage,price_status,source_or_basis,purpose
+1,2,Structural filament,PETG 1kg spools; printed shoulder ribs boom shells claw guards and test coupons,20,40,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+2,1,Compliant pads,Purchased foam and rubber sheet; avoids full TPU spool for V1,6,6,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+3,3,Compact axis motors,NEMA17 17HS19-2004S1 price reference; torque-speed unqualified,9.62,28.86,college_v1,observed_2026-09-08,https://www.omc-stepperonline.com/nema-17-bipolar-59ncm-84oz-in-2a-42x48mm-4-wires-w-1m-cable-connector-17hs19-2004s1,Compact slow V1
+4,3,Axis drivers,External STEP DIR driver >=2A RMS candidate; not DM320T at full motor current,20,60,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+5,1,Transmission hardware,Three axes belts small metal pulleys hubs; large pulley webs printed,60,60,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+6,1,Metal shafts and bearings,Short shafts real radial bearings metal collars spacers and stop pins,40,40,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+7,1,Fasteners and inserts,Through bolts washers locknuts metal compression sleeves,25,25,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+8,1,Guide wear stock,Acetal strips and shims; no raw layer lines as sliding bearings,10,10,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+9,1,Base and anchoring,Plywood base bench clamps metal ties; printer parts in filament allowance,20,20,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+10,1,Pitch power-loss restraint,Normally engaged brake or independently engineered passive restraint; not assumed self locking,35,35,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+11,1,Servo and claw hardware,Servo allowance plus springs lines retainers and smooth pivots,16,16,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+12,1,Owned ESP32,Board identification and firmware port required,0,0,college_v1,user_owned,User reported owned board,Compact slow V1
+13,1,Enclosed external supply,24V120W class candidate; simultaneous current test pending,45,45,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+14,1,Logic and servo regulators,Separate MCU and servo rails with filtering,16,16,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+15,1,Home and limit switches,NC contacts on three axes and adjustable mounts,10,10,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+16,1,Output feedback and interfaces,Three axis sensing logic level interfaces and hardware enable,30,30,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+17,1,E-stop,NC mushroom manual reset,12,12,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+18,1,DC cutoff,DC rated bus interruption plus suppression,20,20,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+19,1,Fuses harness and connectors,Fused branches strain relief and flex wiring,20,20,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+20,1,Regeneration protection,Bus clamp pulse resistor local enclosure; low energy does not imply zero regeneration,20,20,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+21,1,Guards and secondary retention,Small clear guard material and independent retention,20,20,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+22,1,Practice balls,Small lightweight foam balls; weigh before test,6,6,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1
+23,1,Consumables,Solder heatshrink threadlocker ties,8,8,college_v1,estimate_unquoted,Engineering allowance; exact hardware unqualified,Compact slow V1

@@ -1,0 +1,895 @@
+{
+  "status": "Development set. Valid geometry is not completed assembly validation.",
+  "units": "mm",
+  "assumed_bed_mm": [
+    250,
+    220,
+    270
+  ],
+  "parts": [
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "608 bearing; M4 bolts; two steel bench clamps",
+      "note": "Bottom shaft end must not protrude below base",
+      "name": "V1_Base",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Base.stl",
+      "dimensions_mm": [
+        180.0,
+        160.0,
+        8.0
+      ],
+      "volume_mm3": 226266.25861428544,
+      "mesh_facets": 5944,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "608 bearing and throughbolts",
+      "note": "Bearing pocket opens upward; see assembly height stack",
+      "name": "V1_YawUpperDeck",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_YawUpperDeck.stl",
+      "dimensions_mm": [
+        180.0,
+        160.0,
+        10.0
+      ],
+      "volume_mm3": 284059.15240321605,
+      "mesh_facets": 4248,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M4x100 throughbolts washers locknuts",
+      "note": "Print upright with brim; no plastic threads",
+      "name": "V1_DeckSpacer76",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_DeckSpacer76.stl",
+      "dimensions_mm": [
+        16.0,
+        16.0,
+        76.0
+      ],
+      "volume_mm3": 18247.272226531324,
+      "mesh_facets": 436,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "4M3 motor screws;4M4 throughbolts",
+      "note": "NEMA17 pilot22.5;31mm bolt square",
+      "name": "V1_YawMotorPlate",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_YawMotorPlate.stl",
+      "dimensions_mm": [
+        64.0,
+        64.0,
+        6.0
+      ],
+      "volume_mm3": 21590.748704816095,
+      "mesh_facets": 3828,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M4x65 throughbolts",
+      "note": "Motorface53mm abovebench; gear face63mm",
+      "name": "V1_MotorSpacer45",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_MotorSpacer45.stl",
+      "dimensions_mm": [
+        16.0,
+        16.0,
+        45.0
+      ],
+      "volume_mm3": 10804.305923604075,
+      "mesh_facets": 436,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "8mm filedDshaft; M4 feet",
+      "note": "Cheeks innerfacesY+/-52; feet contactouterfacesY+/-62; footbaseholesY+/-80,+/-97",
+      "name": "V1_Turret",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Turret.stl",
+      "dimensions_mm": [
+        240.0,
+        210.0,
+        22.0
+      ],
+      "volume_mm3": 510120.38049729314,
+      "mesh_facets": 4176,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 2,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "608 bearings M3 caps M4 feet",
+      "note": "One each side; outboard gear support is separate",
+      "name": "V1_YokeCheek",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_YokeCheek.stl",
+      "dimensions_mm": [
+        170.0,
+        215.0,
+        10.0
+      ],
+      "volume_mm3": 294799.8888618096,
+      "mesh_facets": 7656,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "608 bearing NEMA17 motor M4 spacers",
+      "note": "Onlyleftside;50mm outboard of inner cheek",
+      "name": "V1_OutboardGearPlate",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_OutboardGearPlate.stl",
+      "dimensions_mm": [
+        170.0,
+        215.0,
+        10.0
+      ],
+      "volume_mm3": 290460.642548855,
+      "mesh_facets": 9776,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M4x70",
+      "note": "Two10mmplates plus40mmclearspan",
+      "name": "V1_GearPlateSpacer40",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_GearPlateSpacer40.stl",
+      "dimensions_mm": [
+        16.0,
+        16.0,
+        40.0
+      ],
+      "volume_mm3": 9603.827487648066,
+      "mesh_facets": 436,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M4 bolts washers locknuts",
+      "note": "Organic supports foruppergusset; sideaccessnutpockets; matchingholesX-108,+20 height18,35",
+      "name": "V1_YokeFoot",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_YokeFoot.stl",
+      "dimensions_mm": [
+        45.0,
+        45.0,
+        25.0
+      ],
+      "volume_mm3": 22736.061990118455,
+      "mesh_facets": 1724,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 2,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3 screws washers",
+      "note": "Fourholedeckcap; pocketcoupon first",
+      "name": "V1_BearingCap608",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_BearingCap608.stl",
+      "dimensions_mm": [
+        40.0,
+        40.0,
+        4.0
+      ],
+      "volume_mm3": 6000.263750757235,
+      "mesh_facets": 2132,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3 screws washers",
+      "note": "Threeholecapsmatchcheeks",
+      "name": "V1_CheekBearingCap608",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_CheekBearingCap608.stl",
+      "dimensions_mm": [
+        40.0,
+        40.0,
+        4.0
+      ],
+      "volume_mm3": 4663.128807576402,
+      "mesh_facets": 2112,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 2,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3x25 (5mm hub) or M3x30 (8mm hub) tangential clamp bolt, nut; filed D-shaft",
+      "note": "Module1.2 pressureangle20; pitchdrive32:1 yaw4:1; 0.12mm tooth-thickness relief per gear (0.24mm pair); mesh/backlash test before powered use",
+      "name": "V1_Pinion20_5mm",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Pinion20_5mm.stl",
+      "dimensions_mm": [
+        26.390670969588193,
+        26.390670969588193,
+        20.0
+      ],
+      "volume_mm3": 6318.327641756066,
+      "mesh_facets": 3532,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3x25 (5mm hub) or M3x30 (8mm hub) tangential clamp bolt, nut; filed D-shaft",
+      "note": "Module1.2 pressureangle20; pitchdrive32:1 yaw4:1; 0.12mm tooth-thickness relief per gear (0.24mm pair); mesh/backlash test before powered use",
+      "name": "V1_Pinion20_8mm",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Pinion20_8mm.stl",
+      "dimensions_mm": [
+        26.390670969588193,
+        26.390670969588193,
+        20.0
+      ],
+      "volume_mm3": 8111.336624926204,
+      "mesh_facets": 2662,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 2,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3x25 (5mm hub) or M3x30 (8mm hub) tangential clamp bolt, nut; filed D-shaft",
+      "note": "Module1.2 pressureangle20; pitchdrive32:1 yaw4:1; 0.12mm tooth-thickness relief per gear (0.24mm pair); mesh/backlash test before powered use",
+      "name": "V1_Gear80_8mm",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Gear80_8mm.stl",
+      "dimensions_mm": [
+        98.39645100123353,
+        98.39645100123353,
+        20.0
+      ],
+      "volume_mm3": 49335.54985264726,
+      "mesh_facets": 11008,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3x25 (5mm hub) or M3x30 (8mm hub) tangential clamp bolt, nut; filed D-shaft",
+      "note": "Module1.2 pressureangle20; pitchdrive32:1 yaw4:1; 0.12mm tooth-thickness relief per gear (0.24mm pair); mesh/backlash test before powered use",
+      "name": "V1_Gear160_8mm",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Gear160_8mm.stl",
+      "dimensions_mm": [
+        194.39808643062423,
+        194.39808643062423,
+        20.0
+      ],
+      "volume_mm3": 206292.86772406142,
+      "mesh_facets": 17728,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 2,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "Independent8mmstubs;4M4x80clampbolts;M3retainingbolts",
+      "note": "240mmlengthfitsCOREOne250X; railsinnerfaceY+/-31 clears60mmflanges; pocketmustberetainedwithpin",
+      "name": "V1_SaddleRail",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_SaddleRail.stl",
+      "dimensions_mm": [
+        240.0,
+        58.0,
+        12.0
+      ],
+      "volume_mm3": 96014.68328534257,
+      "mesh_facets": 2642,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M4x80 throughbolts washers locknuts",
+      "note": "LocatedatX+/-110; twoaboveandtwobelowtube;0.5mmprintedfitshimsrequired",
+      "name": "V1_SaddleCrossbar",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_SaddleCrossbar.stl",
+      "dimensions_mm": [
+        20.0,
+        86.0,
+        8.0
+      ],
+      "volume_mm3": 13505.53099505923,
+      "mesh_facets": 860,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 6,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "M3x25 throughboltandnut",
+      "note": "Frictionretention must be backed by ends/keys where gravityloaded",
+      "name": "V1_Collar8",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_Collar8.stl",
+      "dimensions_mm": [
+        19.981983770774224,
+        20.0,
+        10.0
+      ],
+      "volume_mm3": 2406.110597321491,
+      "mesh_facets": 1972,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported; flat face on bed",
+      "hardware": "One actual608 bearing",
+      "note": "PRINT FIRST. Six pockets left to right 21.9/22.0/22.1/22.2/22.3/22.4mm; notched end is21.9; no powereduse",
+      "name": "V1_608FitCoupon",
+      "group": "frame_drive",
+      "file": "development_stl\\frame_drive\\V1_608FitCoupon.stl",
+      "dimensions_mm": [
+        167.0,
+        27.0,
+        8.0
+      ],
+      "volume_mm3": 10787.164662170793,
+      "mesh_facets": 7714,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "M3x20 flange bolts, M3 washers/nuts; front M3x8 cap screws and M3x16 adjusters",
+      "note": "Vertical; 6 perimeters, 25% gyroid, 0.20 mm layers, 8 mm brim. Upper flange has45-degree underside ramps; supports off. Drill horizontal adjustment bores after print.",
+      "name": "Telescope_Outer_1",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Outer_1.stl",
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        126.66666666666669
+      ],
+      "volume_mm3": 106576.21421171646,
+      "mesh_facets": 3736,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "M3x20 flange bolts, M3 washers/nuts; front M3x8 cap screws and M3x16 adjusters",
+      "note": "Vertical; 6 perimeters, 25% gyroid, 0.20 mm layers, 8 mm brim. Upper flange has45-degree underside ramps; supports off. Drill horizontal adjustment bores after print.",
+      "name": "Telescope_Outer_2",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Outer_2.stl",
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        126.66666666666669
+      ],
+      "volume_mm3": 106576.21421171646,
+      "mesh_facets": 3736,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "M3x20 flange bolts, M3 washers/nuts; front M3x8 cap screws and M3x16 adjusters",
+      "note": "Vertical; 6 perimeters, 25% gyroid, 0.20 mm layers, 8 mm brim. Upper flange has45-degree underside ramps; supports off. Drill horizontal adjustment bores after print.",
+      "name": "Telescope_Outer_3",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Outer_3.stl",
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        126.66666666666667
+      ],
+      "volume_mm3": 106354.03592559684,
+      "mesh_facets": 7912,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "M3x12 DIN965 screws and M3 DIN934 nuts, epoxy",
+      "note": "Vertical; 6 perimeters, 30% gyroid. Bond spigots with plastic-compatible epoxy after coupon; 4 flush M3x12 countersunk screws total. Sand seam flush. No high-speed rating.",
+      "name": "Telescope_Inner_1",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Inner_1.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        163.33333333333334
+      ],
+      "volume_mm3": 61172.933276898904,
+      "mesh_facets": 1516,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "M3x12 DIN965 screws and M3 DIN934 nuts, epoxy",
+      "note": "Vertical; 6 perimeters, 30% gyroid. Bond spigots with plastic-compatible epoxy after coupon; 4 flush M3x12 countersunk screws total. Sand seam flush. No high-speed rating.",
+      "name": "Telescope_Inner_2",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Inner_2.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        163.33333333333334
+      ],
+      "volume_mm3": 61083.72461189642,
+      "mesh_facets": 3420,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "M3x12 DIN965 screws and M3 DIN934 nuts, epoxy",
+      "note": "Vertical; 6 perimeters, 30% gyroid. Bond spigots with plastic-compatible epoxy after coupon; 4 flush M3x12 countersunk screws total. Sand seam flush. No high-speed rating.",
+      "name": "Telescope_Inner_3",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Inner_3.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        133.33333333333334
+      ],
+      "volume_mm3": 45649.458001675346,
+      "mesh_facets": 1936,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "Flat; 6 walls, 40% infill; 4x M3x8 self-tap into2.5 pilot; repeated removal needs inserts redesign.",
+      "name": "Telescope_Front_Guide_Cap",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Front_Guide_Cap.stl",
+      "dimensions_mm": [
+        42.0,
+        42.0,
+        4.0
+      ],
+      "volume_mm3": 3116.1727556980077,
+      "mesh_facets": 1728,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 4,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "Flat; solid thin pad; 0.13 mm PTFE tape including adhesive nominal. Measure actual tape; adjust until free running without shake.",
+      "name": "Telescope_Front_Guide_Pad",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Front_Guide_Pad.stl",
+      "dimensions_mm": [
+        16.0,
+        18.0,
+        1.6
+      ],
+      "volume_mm3": 456.72849592094764,
+      "mesh_facets": 432,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "Vertical; 6 walls; bond to rear16 mm of slider, apply measured0.13 mm PTFE tape to four outer faces. Finished OD34.4 leaves0.4 mm total nominal bore clearance. Rear cap traps ring axially against bonded tube surface.",
+      "name": "Telescope_Rear_Guide_Ring",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Rear_Guide_Ring.stl",
+      "dimensions_mm": [
+        34.14,
+        34.14,
+        16.0
+      ],
+      "volume_mm3": 3959.193600000002,
+      "mesh_facets": 32,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "Low-stretch 2 mm cord, through two bores; knots outside",
+      "note": "Cap fit coupon first; bonded retention; redundant external tether required for powered trials.",
+      "name": "Telescope_Rear_Tether_Cap",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Rear_Tether_Cap.stl",
+      "dimensions_mm": [
+        42.0,
+        42.0,
+        14.0
+      ],
+      "volume_mm3": 19118.38162279794,
+      "mesh_facets": 876,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "Low-stretch 2 mm cord",
+      "note": "Fit at inner rear, bonded; cap outer30 leaves guide travel clear.",
+      "name": "Telescope_Inner_Rear_Cap",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Inner_Rear_Cap.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        14.0
+      ],
+      "volume_mm3": 8992.301622797944,
+      "mesh_facets": 876,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "PRINT FIRST: fit gauge, not assembly",
+      "name": "Telescope_Outer_Fit_Coupon",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Outer_Fit_Coupon.stl",
+      "dimensions_mm": [
+        42.0,
+        42.0,
+        20.0
+      ],
+      "volume_mm3": 11059.2,
+      "mesh_facets": 32,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "PRINT FIRST: fit gauge, not assembly",
+      "name": "Telescope_Inner_Fit_Coupon",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Inner_Fit_Coupon.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        20.0
+      ],
+      "volume_mm3": 6860.800000000002,
+      "mesh_facets": 32,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "PRINT FIRST: exact30mm spigot and nut pockets, cropped to20mm tube; coupon only.",
+      "name": "Telescope_Joint_Male_Fit_Coupon",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Joint_Male_Fit_Coupon.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        50.0
+      ],
+      "volume_mm3": 22295.066610232258,
+      "mesh_facets": 1516,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported, z=0; no model scaling",
+      "hardware": "",
+      "note": "PRINT FIRST: exact receiving joint cropped to40mm; check M3x12 screws sit flush and nuts can be inserted before bonding.",
+      "name": "Telescope_Joint_Female_Fit_Coupon",
+      "group": "telescope",
+      "file": "development_stl\\telescope\\Telescope_Joint_Female_Fit_Coupon.stl",
+      "dimensions_mm": [
+        30.0,
+        30.0,
+        40.0
+      ],
+      "volume_mm3": 13632.391335008664,
+      "mesh_facets": 1936,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "4 M3 interface bolts; 2 M3 finger pivots; 4 M3 servo carrier fasteners",
+      "note": "Four mounting holes: X=+/-10, Y=0 and 10 mm; 5 mm palm thickness. Servo carrier slides along X to align shaft; measure output height before powered assembly.",
+      "name": "V1_Claw_Palm",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Palm.stl",
+      "dimensions_mm": [
+        70.0,
+        54.0,
+        5.0
+      ],
+      "volume_mm3": 14346.039861556266,
+      "mesh_facets": 4320,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "M3 pivot and pushrod bolts, washer, locknut; foam pad",
+      "note": "Flat XY print. Left at X=-22. Foam-pad thickness establishes final grip.",
+      "name": "V1_Claw_Finger_Left",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Finger_Left.stl",
+      "dimensions_mm": [
+        18.0,
+        66.0,
+        6.000000000000001
+      ],
+      "volume_mm3": 3442.8120971473045,
+      "mesh_facets": 2328,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "M3 pivot and pushrod bolts, washer, locknut; foam pad",
+      "note": "Flat XY print. Right at X=22.",
+      "name": "V1_Claw_Finger_Right",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Finger_Right.stl",
+      "dimensions_mm": [
+        18.0,
+        66.0,
+        6.000000000000001
+      ],
+      "volume_mm3": 3442.812097147304,
+      "mesh_facets": 2332,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 2,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "M3 pivot screws, washers, locknuts",
+      "note": "23.4094 mm hole-centre distance; rods stacked in separate Z planes.",
+      "name": "V1_Claw_Pushrod",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Pushrod.stl",
+      "dimensions_mm": [
+        30.40939982143925,
+        7.0,
+        3.0
+      ],
+      "volume_mm3": 552.5757096564021,
+      "mesh_facets": 1280,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "Bought MG90S horn; 2 M2 bolts; M3 common rod pin",
+      "note": "FIT TEST ONLY: attach to supplied horn through slots; measure/drill horn if required. Do not rely on centre screw friction to transmit torque.",
+      "name": "V1_Claw_Crank_Adapter",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Crank_Adapter.stl",
+      "dimensions_mm": [
+        22.0,
+        10.0,
+        3.0
+      ],
+      "volume_mm3": 410.22344482105484,
+      "mesh_facets": 2152,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "2 M2.5 flange bolts/nuts; 4 M3 carrier fasteners",
+      "note": "FIT TEST ONLY: 24x14 mm body window, 27-33 mm flange-hole spacing; Carrier centre nominal (-10,-22), adjustable +/-5 mm X; measure actual output height.",
+      "name": "V1_Claw_Servo_Carrier",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Servo_Carrier.stl",
+      "dimensions_mm": [
+        44.0,
+        34.0,
+        3.0
+      ],
+      "volume_mm3": 3279.218375448472,
+      "mesh_facets": 2600,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "fit_check_only"
+    },
+    {
+      "qty": 5,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "M3 smooth shank",
+      "note": "Flat print; measure thickness; washer may replace.",
+      "name": "V1_Claw_Spacer_1mm",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Spacer_1mm.stl",
+      "dimensions_mm": [
+        7.0,
+        7.0,
+        1.0
+      ],
+      "volume_mm3": 29.405307237600468,
+      "mesh_facets": 840,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "M3 smooth shank",
+      "note": "Left finger-to-rod separation.",
+      "name": "V1_Claw_Spacer_2mm",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Spacer_2mm.stl",
+      "dimensions_mm": [
+        7.0,
+        7.0,
+        2.0
+      ],
+      "volume_mm3": 58.810614475200936,
+      "mesh_facets": 840,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    },
+    {
+      "qty": 1,
+      "material": "PETG",
+      "orientation": "As exported: broad flat face on bed, Z up; 0.20 mm layers, 5 perimeters, 30% gyroid, 5 top/bottom layers.",
+      "hardware": "M3 smooth shank",
+      "note": "Right finger-to-rod separation.",
+      "name": "V1_Claw_Spacer_6mm",
+      "group": "claw",
+      "file": "development_stl\\claw\\V1_Claw_Spacer_6mm.stl",
+      "dimensions_mm": [
+        7.0,
+        7.0,
+        6.0
+      ],
+      "volume_mm3": 176.43184342560278,
+      "mesh_facets": 840,
+      "closed_mesh": true,
+      "valid_single_solid": true,
+      "release": "development_hold"
+    }
+  ],
+  "unique_parts": 44,
+  "piece_count": 80,
+  "all_geometry_checks_passed": true,
+  "full_build_ready": false
+}

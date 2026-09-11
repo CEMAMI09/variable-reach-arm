@@ -1,0 +1,260 @@
+{
+  "status": "51 sampled printed-part poses pass; purchased hardware and continuous sweep NOT verified",
+  "poses": [
+    {
+      "crank_deg": -25,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -24,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": -23,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -22,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": -21,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -20,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -19,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -18,
+      "printed_intersections": [],
+      "max_closure_error_mm": 7.105427357601002e-15
+    },
+    {
+      "crank_deg": -17,
+      "printed_intersections": [],
+      "max_closure_error_mm": 7.105427357601002e-15
+    },
+    {
+      "crank_deg": -16,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -15,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": -14,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -13,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -12,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -11,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -10,
+      "printed_intersections": [],
+      "max_closure_error_mm": 7.105427357601002e-15
+    },
+    {
+      "crank_deg": -9,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -8,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -7,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -6,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -5,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -4,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": -3,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -2,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": -1,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 0,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 1,
+      "printed_intersections": [],
+      "max_closure_error_mm": 7.105427357601002e-15
+    },
+    {
+      "crank_deg": 2,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 3,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 4,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 5,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 6,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 7,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 8,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 9,
+      "printed_intersections": [],
+      "max_closure_error_mm": 7.105427357601002e-15
+    },
+    {
+      "crank_deg": 10,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 11,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 12,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 13,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 14,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 15,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 16,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 17,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 18,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 19,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 20,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 21,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 22,
+      "printed_intersections": [],
+      "max_closure_error_mm": 0.0
+    },
+    {
+      "crank_deg": 23,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 24,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    },
+    {
+      "crank_deg": 25,
+      "printed_intersections": [],
+      "max_closure_error_mm": 3.552713678800501e-15
+    }
+  ]
+}

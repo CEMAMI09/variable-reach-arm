@@ -1,172 +1,91 @@
 /**
- * Variable-reach arm firmware — Teensy 4.1 / Arduino-compatible entry.
- *
- * Control development order (do not skip):
- * 1 manual low-speed  2 homing  3 position  4 velocity
- * 5 accel limits  6 multi-axis  7 traj tracking  8 dynamic extension
+ * Qualification firmware: protocol and safety diagnostics ONLY.
+ * No command can enable motion until tested hardware adapters replace the lock.
+ * Build may be flashed on a logic-only bench by a human; this is not motion firmware.
  */
-
 #include "config.h"
 #include "control_loop.h"
 #include "protocol.h"
+#include "command_receiver.h"
 #include "safety.h"
-
+#include "motors.h"
 #include <string.h>
-
 #if defined(ARDUINO)
 #include <Arduino.h>
 #else
-/* Host-side compile smoke test stubs */
 #include <stdio.h>
-#define SERIAL_PORT_USBVIRTUAL
 struct FakeSerial {
   void begin(int) {}
   int available() { return 0; }
-  int readBytes(char *, int) { return 0; }
+  int read() { return -1; }
+  int availableForWrite() { return 128; }
   size_t write(const uint8_t *, size_t n) { return n; }
 } Serial;
 void pinMode(int, int) {}
+int digitalRead(int) { return 1; }
 #define INPUT_PULLUP 2
 #define OUTPUT 1
-unsigned long micros() { return 0; }
-unsigned long millis() { return 0; }
-void delay(int) {}
+unsigned long micros() { static uint32_t t=0; t+=1000; return t; }
+unsigned long millis() { return micros()/1000; }
 #endif
 
-static HostCommand rx_cmd;
-static TelemetryFrame tx_tlm;
-static JointCommand joint_cmd;
-static uint8_t rx_buf[sizeof(HostCommand)];
-static unsigned rx_len = 0;
-
-static void apply_limits(JointCommand &c) {
-  if (c.yaw_deg < YAW_MIN_MDEG / 1000.0f)
-    c.yaw_deg = YAW_MIN_MDEG / 1000.0f;
-  if (c.yaw_deg > YAW_MAX_MDEG / 1000.0f)
-    c.yaw_deg = YAW_MAX_MDEG / 1000.0f;
-  if (c.pitch_deg < PITCH_MIN_MDEG / 1000.0f)
-    c.pitch_deg = PITCH_MIN_MDEG / 1000.0f;
-  if (c.pitch_deg > PITCH_MAX_MDEG / 1000.0f)
-    c.pitch_deg = PITCH_MAX_MDEG / 1000.0f;
-  if (c.ext_mm < EXT_MIN_MM)
-    c.ext_mm = EXT_MIN_MM;
-  if (c.ext_mm > EXT_MAX_MM)
-    c.ext_mm = EXT_MAX_MM;
-}
-
-static void handle_command(const HostCommand &c, uint32_t now_ms) {
-  safety_note_host(now_ms);
-  uint16_t crc = protocol_crc16(reinterpret_cast<const uint8_t *>(&c),
-                                sizeof(HostCommand) - 2);
-  if (crc != c.crc16) {
-    safety_raise(FLT_ENCODER); /* reuse bit: treat as protocol/encoder class fault log */
-    return;
-  }
-
-  switch (c.cmd_id) {
-  case CMD_ENABLE:
-    if (safety_faults() == FLT_NONE) {
-      /* transition handled externally when wiring drivers */
-    }
-    break;
-  case CMD_DISABLE:
-    break;
-  case CMD_CLEAR_FLT:
-    safety_clear_if_safe();
-    break;
-  case CMD_HOME:
-    /* Extension slow seek toward PIN_EXT_HOME — implement with driver layer */
-    break;
-  case CMD_SETPOINT:
-  case CMD_TRAJ:
-    joint_cmd.yaw_deg = c.yaw_mdeg / 1000.0f;
-    joint_cmd.pitch_deg = c.pitch_mdeg / 1000.0f;
-    joint_cmd.ext_mm = c.extension_mm;
-    joint_cmd.yaw_vel = c.yaw_vel_mdeg_s / 1000.0f;
-    joint_cmd.pitch_vel = c.pitch_vel_mdeg_s / 1000.0f;
-    joint_cmd.ext_vel = c.ext_vel_mm_s;
-    apply_limits(joint_cmd);
-    if (safety_motion_allowed())
-      control_set_targets(joint_cmd);
-    break;
-  default:
-    break;
-  }
-}
+static CommandReceiver receiver;
 
 static void publish_telemetry(uint32_t now_us) {
-  tx_tlm.timestamp_us = now_us;
-  tx_tlm.status = static_cast<uint8_t>(safety_state());
-  tx_tlm.catch_sensor = 0;
-  tx_tlm.yaw_mdeg = static_cast<int16_t>(control_axis(AXIS_YAW).pos * 1000);
-  tx_tlm.pitch_mdeg = static_cast<int16_t>(control_axis(AXIS_PITCH).pos * 1000);
-  tx_tlm.extension_mm = static_cast<int16_t>(control_axis(AXIS_EXT).pos);
-  tx_tlm.yaw_vel_mdeg_s = static_cast<int16_t>(control_axis(AXIS_YAW).vel * 1000);
-  tx_tlm.pitch_vel_mdeg_s = static_cast<int16_t>(control_axis(AXIS_PITCH).vel * 1000);
-  tx_tlm.ext_vel_mm_s = static_cast<int16_t>(control_axis(AXIS_EXT).vel);
-  tx_tlm.yaw_target_mdeg = static_cast<int16_t>(control_axis(AXIS_YAW).target * 1000);
-  tx_tlm.pitch_target_mdeg = static_cast<int16_t>(control_axis(AXIS_PITCH).target * 1000);
-  tx_tlm.ext_target_mm = static_cast<int16_t>(control_axis(AXIS_EXT).target);
-  tx_tlm.current_yaw_mA = static_cast<int16_t>(control_axis(AXIS_YAW).current_mA);
-  tx_tlm.current_pitch_mA = static_cast<int16_t>(control_axis(AXIS_PITCH).current_mA);
-  tx_tlm.current_ext_mA = static_cast<int16_t>(control_axis(AXIS_EXT).current_mA);
-  tx_tlm.fault_bits = safety_faults();
-  tx_tlm.crc16 = protocol_crc16(reinterpret_cast<const uint8_t *>(&tx_tlm),
-                                sizeof(TelemetryFrame) - 2);
-  Serial.write(reinterpret_cast<const uint8_t *>(&tx_tlm), sizeof(tx_tlm));
+  TelemetryFrame t={};
+  t.magic=PROTOCOL_MAGIC;t.version=PROTOCOL_VERSION;t.size=sizeof(t);
+  t.timestamp_us=now_us;t.status=uint8_t(safety_state());
+  t.catch_sensor=255; // unavailable until actual three-finger claw capture sensing exists
+  t.yaw_mdeg=t.pitch_mdeg=t.extension_mm=INT32_MIN;
+  t.yaw_vel_mdeg_s=t.pitch_vel_mdeg_s=t.ext_vel_mm_s=INT32_MIN;
+  t.yaw_target_mdeg=control_axis(AXIS_YAW).target_valid ?
+    int32_t(control_axis(AXIS_YAW).target*1000) : INT32_MIN;
+  t.pitch_target_mdeg=control_axis(AXIS_PITCH).target_valid ?
+    int32_t(control_axis(AXIS_PITCH).target*1000) : INT32_MIN;
+  t.ext_target_mm=control_axis(AXIS_EXT).target_valid ?
+    int32_t(control_axis(AXIS_EXT).target) : INT32_MIN;
+  t.current_yaw_mA=t.current_pitch_mA=t.current_ext_mA=INT32_MIN;
+  t.fault_bits=safety_faults();
+  t.crc16=protocol_crc16(reinterpret_cast<const uint8_t*>(&t),sizeof(t)-2);
+  Serial.write(reinterpret_cast<const uint8_t*>(&t),sizeof(t));
 }
 
 void setup() {
-  Serial.begin(921600);
-  pinMode(PIN_ESTOP_SENSE, INPUT_PULLUP);
-  pinMode(PIN_EXT_HOME, INPUT_PULLUP);
-  pinMode(PIN_EXT_MAX, INPUT_PULLUP);
-  pinMode(PIN_CATCH_SENSOR, INPUT_PULLUP);
-  pinMode(PIN_LATCH_SERVO, OUTPUT);
-  safety_init();
-  control_init();
+  motors_init();motors_disable_all(); // adapter stays unqualified; no imaginary output pins
+  pinMode(PIN_ESTOP_SENSE,INPUT_PULLUP);
+  pinMode(PIN_EXT_HOME,INPUT_PULLUP);
+  pinMode(PIN_EXT_MAX,INPUT_PULLUP);
+  pinMode(PIN_CATCH_SENSOR,INPUT_PULLUP);
+  // Latch pin intentionally not configured: there is no qualified gripper adapter.
+  safety_init();control_init();Serial.begin(921600);
 }
 
 void loop() {
-  static uint32_t last_us = 0;
-  uint32_t now_us = micros();
-  uint32_t now_ms = millis();
-  float dt = (last_us == 0) ? (1.0f / CONTROL_HZ) : (now_us - last_us) * 1e-6f;
-  last_us = now_us;
-
-  while (Serial.available() > 0 && rx_len < sizeof(rx_buf)) {
-    int n = Serial.readBytes(reinterpret_cast<char *>(rx_buf + rx_len),
-                             sizeof(rx_buf) - rx_len);
-    if (n <= 0)
-      break;
-    rx_len += static_cast<unsigned>(n);
+  static bool started=false;
+  static uint32_t last_us=0,last_tlm_ms=0;
+  const uint32_t now_us=micros(),now_ms=millis();
+  const uint32_t elapsed=now_us-last_us;
+  if(started && elapsed<1000000u/CONTROL_HZ)return;
+  if(started && elapsed>WATCHDOG_MS*1000u)safety_raise(FLT_WATCHDOG);
+  started=true;last_us=now_us;
+  // No catch-up burst after an overrun. Actual WCET/jitter still needs on-target measurement.
+  SafetyInputs input;
+  input.estop_open=digitalRead(PIN_ESTOP_SENSE)!=0;
+  input.home_open=digitalRead(PIN_EXT_HOME)!=0;
+  input.max_open=digitalRead(PIN_EXT_MAX)!=0;
+  safety_tick(now_ms,input);
+  for(unsigned budget=0;budget<128 && Serial.available()>0;++budget) {
+    const int byte=Serial.read();
+    if(byte<0)break;
+    receiver.feed(uint8_t(byte),now_ms);
   }
-  if (rx_len >= sizeof(HostCommand)) {
-    memcpy(&rx_cmd, rx_buf, sizeof(HostCommand));
-    handle_command(rx_cmd, now_ms);
-    rx_len = 0;
-  }
-
-  safety_tick(now_ms);
-
-  /* TODO: read encoders into control_update_measurement(...) */
-  if (safety_motion_allowed())
-    control_step(dt);
-  /* TODO: write control_effort(i) to drivers */
-
-  static uint32_t last_tlm_ms = 0;
-  if (now_ms - last_tlm_ms >= 10) {
-    last_tlm_ms = now_ms;
-    publish_telemetry(now_us);
+  if(!safety_motion_allowed()) { motors_disable_all(); control_reset(); }
+  // NO step generator, effort output, driver polling or gripper actuation is implemented.
+  if(uint32_t(now_ms-last_tlm_ms)>=10 &&
+      Serial.availableForWrite()>=int(sizeof(TelemetryFrame))) {
+    last_tlm_ms=now_ms;publish_telemetry(now_us);
   }
 }
-
 #ifndef ARDUINO
-int main() {
-  setup();
-  for (int i = 0; i < 3; i++)
-    loop();
-  printf("firmware smoke ok\n");
-  return 0;
-}
+int main(){setup();for(int i=0;i<3;++i)loop();printf("qualification firmware smoke ok; motion locked\n");return safety_motion_allowed()?1:0;}
 #endif

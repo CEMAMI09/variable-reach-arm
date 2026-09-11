@@ -1,0 +1,28 @@
+{
+  "revision": "2026-09-08-print-first",
+  "status": "Named candidate basket with estimates; not a complete qualified shopping release",
+  "parts_usd": 368.47,
+  "shipping_allowance_usd": 45,
+  "tax_rate_assumed": 0.08,
+  "tax_includes_shipping": true,
+  "repair_reserve_rate_optional": 0.15,
+  "old_parts_usd": 547.86,
+  "old_all_in_usd": 705.64,
+  "scope": "Compact350–550mm reach slow yaw/pitch/extension/claw demonstration; no camera or autonomous catching",
+  "architecture_changes": [
+    "12V bus instead of24V; motor current derated and loaded torque-speed sizing pending",
+    "Printed base shoulder telescope pulleys caps clamps and guards",
+    "Printed passive pitch-friction/catch-cradle candidate replaces unnamed35USD brake allowance; must pass gravity-hold and motion-torque tests",
+    "Host USB powers ESP32; separately regulated servo rail from switched12V supply",
+    "All three feedback sensors retained; extension sensing mechanics pending",
+    "Named discrete power-interruption/watchdog/dump circuit components, circuit validation pending"
+  ],
+  "do_not_order_yet": [
+    "Final belt center distances",
+    "Spring rates and pitch restraint",
+    "Driver current and running torque compatibility",
+    "Dump circuit and DC relay inrush/interrupt protection",
+    "Supplier fastener lengths and fits",
+    "ESP32 board interface"
+  ]
+}

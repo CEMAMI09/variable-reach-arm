@@ -1,0 +1,682 @@
+{
+  "mode": "demo",
+  "frames": [
+    {
+      "file": "frame_000.png",
+      "yaw_deg": 0.0,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_001.png",
+      "yaw_deg": -0.07314352255643934,
+      "pitch_deg": 5.0365717612782195,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_002.png",
+      "yaw_deg": -0.5329497060957075,
+      "pitch_deg": 5.266474853047853,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_003.png",
+      "yaw_deg": -1.6313992989939041,
+      "pitch_deg": 5.815699649496952,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_004.png",
+      "yaw_deg": -3.4914541790495672,
+      "pitch_deg": 6.745727089524784,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_005.png",
+      "yaw_deg": -6.1267548909764304,
+      "pitch_deg": 8.063377445488214,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_006.png",
+      "yaw_deg": -9.461318183896188,
+      "pitch_deg": 9.730659091948095,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_007.png",
+      "yaw_deg": -13.349234548831223,
+      "pitch_deg": 11.674617274415612,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_008.png",
+      "yaw_deg": -17.59436575619743,
+      "pitch_deg": 13.797182878098715,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_009.png",
+      "yaw_deg": -21.970042393296882,
+      "pitch_deg": 15.985021196648441,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_010.png",
+      "yaw_deg": -26.23876140181065,
+      "pitch_deg": 18.119380700905324,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_011.png",
+      "yaw_deg": -30.171883615291573,
+      "pitch_deg": 20.08594180764579,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_012.png",
+      "yaw_deg": -33.569331296656955,
+      "pitch_deg": 21.784665648328478,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_013.png",
+      "yaw_deg": -36.27928567568137,
+      "pitch_deg": 23.139642837840686,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_014.png",
+      "yaw_deg": -38.21788448648941,
+      "pitch_deg": 24.108942243244705,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_015.png",
+      "yaw_deg": -39.388919505048435,
+      "pitch_deg": 24.694459752524217,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_016.png",
+      "yaw_deg": -39.90353408666125,
+      "pitch_deg": 24.951767043330626,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_017.png",
+      "yaw_deg": -39.99992070345917,
+      "pitch_deg": 24.999960351729584,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_018.png",
+      "yaw_deg": -39.94391242412323,
+      "pitch_deg": 25.018695858625588,
+      "extension_mm": 0.37391717251177503,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_019.png",
+      "yaw_deg": -39.51055876709862,
+      "pitch_deg": 25.163147077633795,
+      "extension_mm": 3.2629415526758674,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_020.png",
+      "yaw_deg": -38.39025184575998,
+      "pitch_deg": 25.53658271808001,
+      "extension_mm": 10.73165436160015,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_021.png",
+      "yaw_deg": -36.38900037344552,
+      "pitch_deg": 26.203666542184827,
+      "extension_mm": 24.073330843696535,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_022.png",
+      "yaw_deg": -33.415050342136695,
+      "pitch_deg": 27.194983219287767,
+      "extension_mm": 43.899664385755365,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_023.png",
+      "yaw_deg": -29.465343661048482,
+      "pitch_deg": 28.51155211298384,
+      "extension_mm": 70.23104225967678,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_024.png",
+      "yaw_deg": -24.61197679521969,
+      "pitch_deg": 30.129341068260103,
+      "extension_mm": 102.58682136520206,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_025.png",
+      "yaw_deg": -18.98865940410326,
+      "pitch_deg": 32.00378019863225,
+      "extension_mm": 140.07560397264493,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_026.png",
+      "yaw_deg": -12.777172980156532,
+      "pitch_deg": 34.07427567328116,
+      "extension_mm": 181.48551346562311,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_027.png",
+      "yaw_deg": -6.19382948743165,
+      "pitch_deg": 36.26872350418945,
+      "extension_mm": 225.374470083789,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_028.png",
+      "yaw_deg": 0.5240699998342748,
+      "pitch_deg": 38.50802333327809,
+      "extension_mm": 270.16046666556184,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_029.png",
+      "yaw_deg": 7.1317766586287945,
+      "pitch_deg": 40.71059221954293,
+      "extension_mm": 314.21184439085863,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_030.png",
+      "yaw_deg": 13.390635278573768,
+      "pitch_deg": 42.796878426191256,
+      "extension_mm": 355.9375685238251,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_031.png",
+      "yaw_deg": 19.0816256233352,
+      "pitch_deg": 44.693875207778405,
+      "extension_mm": 393.877504155568,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_032.png",
+      "yaw_deg": 24.018903792032773,
+      "pitch_deg": 46.33963459734426,
+      "extension_mm": 426.79269194688516,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_033.png",
+      "yaw_deg": 28.063343580649658,
+      "pitch_deg": 47.68778119354988,
+      "extension_mm": 453.75562387099774,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_034.png",
+      "yaw_deg": 31.136077843442223,
+      "pitch_deg": 48.71202594781407,
+      "extension_mm": 474.24051895628145,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_035.png",
+      "yaw_deg": 33.232039854349665,
+      "pitch_deg": 49.410679951449886,
+      "extension_mm": 488.21359902899775,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_036.png",
+      "yaw_deg": 34.43350466840383,
+      "pitch_deg": 49.81116822280128,
+      "extension_mm": 496.22336445602554,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_037.png",
+      "yaw_deg": 34.923630483138595,
+      "pitch_deg": 49.97454349437953,
+      "extension_mm": 499.4908698875907,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_038.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_039.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 19.94514235808267
+    },
+    {
+      "file": "frame_040.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 19.60028772042822
+    },
+    {
+      "file": "frame_041.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 18.776450525754573
+    },
+    {
+      "file": "frame_042.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 17.381409365712827
+    },
+    {
+      "file": "frame_043.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 15.404933831767671
+    },
+    {
+      "file": "frame_044.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 12.904011362077863
+    },
+    {
+      "file": "frame_045.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 9.988074088376585
+    },
+    {
+      "file": "frame_046.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 6.804225682851923
+    },
+    {
+      "file": "frame_047.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 3.5224682050273444
+    },
+    {
+      "file": "frame_048.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": 0.3209289486420026
+    },
+    {
+      "file": "frame_049.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -2.6289127114687005
+    },
+    {
+      "file": "frame_050.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -5.176998472492706
+    },
+    {
+      "file": "frame_051.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -7.209464256761038
+    },
+    {
+      "file": "frame_052.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -8.663413364867072
+    },
+    {
+      "file": "frame_053.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -9.541689628786322
+    },
+    {
+      "file": "frame_054.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -9.927650564995954
+    },
+    {
+      "file": "frame_055.png",
+      "yaw_deg": 35.0,
+      "pitch_deg": 50.0,
+      "extension_mm": 500.0,
+      "claw_angle_deg": -9.999940527594404
+    },
+    {
+      "file": "frame_056.png",
+      "yaw_deg": 34.90225762291178,
+      "pitch_deg": 49.91622081963867,
+      "extension_mm": 499.3018401636556,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_057.png",
+      "yaw_deg": 34.18575593502707,
+      "pitch_deg": 49.30207651573749,
+      "extension_mm": 494.1839709644791,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_058.png",
+      "yaw_deg": 32.45487499296352,
+      "pitch_deg": 47.81846427968301,
+      "extension_mm": 481.8205356640251,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_059.png",
+      "yaw_deg": 29.6014755696937,
+      "pitch_deg": 45.372693345451744,
+      "extension_mm": 461.4391112120979,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_060.png",
+      "yaw_deg": 25.74449567646528,
+      "pitch_deg": 42.06671057982739,
+      "extension_mm": 433.88925483189485,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_061.png",
+      "yaw_deg": 21.169396632594143,
+      "pitch_deg": 38.145197113652124,
+      "extension_mm": 401.20997594710104,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_062.png",
+      "yaw_deg": 16.267609135257988,
+      "pitch_deg": 33.94366497307827,
+      "extension_mm": 366.1972081089856,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_063.png",
+      "yaw_deg": 11.47597932928953,
+      "pitch_deg": 29.836553710819597,
+      "extension_mm": 331.97128092349664,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_064.png",
+      "yaw_deg": 7.216214876969662,
+      "pitch_deg": 26.185327037402566,
+      "extension_mm": 301.5443919783547,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_065.png",
+      "yaw_deg": 3.8343310278210865,
+      "pitch_deg": 23.286569452418075,
+      "extension_mm": 277.3880787701506,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_066.png",
+      "yaw_deg": 1.5400966884014622,
+      "pitch_deg": 21.32008287577268,
+      "extension_mm": 261.000690631439,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_067.png",
+      "yaw_deg": 0.3464804920966529,
+      "pitch_deg": 20.296983278939987,
+      "extension_mm": 252.47486065783323,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_068.png",
+      "yaw_deg": 0.009096868914234335,
+      "pitch_deg": 20.007797316212198,
+      "extension_mm": 250.06497763510166,
+      "claw_angle_deg": -10.0
+    },
+    {
+      "file": "frame_069.png",
+      "yaw_deg": -0.011584486701662915,
+      "pitch_deg": 19.99131163497375,
+      "extension_mm": 249.8551939162292,
+      "claw_angle_deg": -9.982623269947506
+    },
+    {
+      "file": "frame_070.png",
+      "yaw_deg": -0.1979888526266513,
+      "pitch_deg": 19.851508360530012,
+      "extension_mm": 247.52513934216685,
+      "claw_angle_deg": -9.703016721060022
+    },
+    {
+      "file": "frame_071.png",
+      "yaw_deg": -0.7617114694576034,
+      "pitch_deg": 19.428716397906797,
+      "extension_mm": 240.47860663177997,
+      "claw_angle_deg": -8.857432795813596
+    },
+    {
+      "file": "frame_072.png",
+      "yaw_deg": -1.8025541385865478,
+      "pitch_deg": 18.64808439606009,
+      "extension_mm": 227.46807326766816,
+      "claw_angle_deg": -7.296168792120178
+    },
+    {
+      "file": "frame_073.png",
+      "yaw_deg": -3.331579656018392,
+      "pitch_deg": 17.501315257986207,
+      "extension_mm": 208.3552542997701,
+      "claw_angle_deg": -5.002630515972412
+    },
+    {
+      "file": "frame_074.png",
+      "yaw_deg": -5.288859613448411,
+      "pitch_deg": 16.033355289913693,
+      "extension_mm": 183.88925483189485,
+      "claw_angle_deg": -2.066710579827383
+    },
+    {
+      "file": "frame_075.png",
+      "yaw_deg": -7.561222199339572,
+      "pitch_deg": 14.32908335049532,
+      "extension_mm": 155.48472250825535,
+      "claw_angle_deg": 1.3418332990093589
+    },
+    {
+      "file": "frame_076.png",
+      "yaw_deg": -10.000000000000014,
+      "pitch_deg": 12.49999999999999,
+      "extension_mm": 124.99999999999983,
+      "claw_angle_deg": 5.0000000000000195
+    },
+    {
+      "file": "frame_077.png",
+      "yaw_deg": -12.438777800660432,
+      "pitch_deg": 10.670916649504676,
+      "extension_mm": 94.5152774917446,
+      "claw_angle_deg": 8.658166700990648
+    },
+    {
+      "file": "frame_078.png",
+      "yaw_deg": -14.711140386551593,
+      "pitch_deg": 8.966644710086305,
+      "extension_mm": 66.1107451681051,
+      "claw_angle_deg": 12.06671057982739
+    },
+    {
+      "file": "frame_079.png",
+      "yaw_deg": -16.66842034398161,
+      "pitch_deg": 7.498684742013795,
+      "extension_mm": 41.64474570022992,
+      "claw_angle_deg": 15.00263051597241
+    },
+    {
+      "file": "frame_080.png",
+      "yaw_deg": -18.197445861413456,
+      "pitch_deg": 6.35191560393991,
+      "extension_mm": 22.53192673233181,
+      "claw_angle_deg": 17.29616879212018
+    },
+    {
+      "file": "frame_081.png",
+      "yaw_deg": -19.2382885305424,
+      "pitch_deg": 5.571283602093201,
+      "extension_mm": 9.521393368220032,
+      "claw_angle_deg": 18.857432795813597
+    },
+    {
+      "file": "frame_082.png",
+      "yaw_deg": -19.80201114737335,
+      "pitch_deg": 5.148491639469988,
+      "extension_mm": 2.4748606578331476,
+      "claw_angle_deg": 19.703016721060024
+    },
+    {
+      "file": "frame_083.png",
+      "yaw_deg": -19.98841551329834,
+      "pitch_deg": 5.008688365026245,
+      "extension_mm": 0.1448060837707601,
+      "claw_angle_deg": 19.98262326994751
+    },
+    {
+      "file": "frame_084.png",
+      "yaw_deg": -19.99180870024349,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_085.png",
+      "yaw_deg": -19.694459752524207,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_086.png",
+      "yaw_deg": -18.673526381618824,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_087.png",
+      "yaw_deg": -16.784665648328488,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_088.png",
+      "yaw_deg": -14.130338602758057,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_089.png",
+      "yaw_deg": -10.98502119664843,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_090.png",
+      "yaw_deg": -7.720415195708675,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_091.png",
+      "yaw_deg": -4.730659091948098,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_092.png",
+      "yaw_deg": -2.3575390160086407,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_093.png",
+      "yaw_deg": -0.8156996494969384,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_094.png",
+      "yaw_deg": -0.1178551373165142,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    },
+    {
+      "file": "frame_095.png",
+      "yaw_deg": 0.0,
+      "pitch_deg": 5.0,
+      "extension_mm": 0.0,
+      "claw_angle_deg": 20.0
+    }
+  ],
+  "pivot_height_mm": 850,
+  "stiffened_yoke": true,
+  "status": "CLEARANCE PROTOTYPE \u2014 KINEMATIC DEMONSTRATION",
+  "limitation": "Prescribed motion; not measured performance, controller execution, or catch success.",
+  "geometry_source": "cad/scripts/build_review_robot.py and its current imported modules"
+}

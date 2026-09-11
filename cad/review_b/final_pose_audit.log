@@ -1,0 +1,6 @@
+POSE_RESULT {"pose": [250, 0, 20], "count": 381, "mass": {"stationary": 6.555733681226788, "yaw": 5.220844994112767, "pitch": 1.2554728218773432}, "yaw_j": 0.1104497881438217, "collisions": []}
+POSE_RESULT {"pose": [0, 0, 70], "count": 381, "mass": {"stationary": 6.555733681226788, "yaw": 5.220844994112767, "pitch": 1.2554728218773434}, "yaw_j": 0.1104497881438217, "collisions": []}
+POSE_RESULT {"pose": [500, 70, 70], "count": 381, "mass": {"stationary": 6.555733681226788, "yaw": 5.220844994112769, "pitch": 1.2554728218773434}, "yaw_j": 0.11044978814382173, "collisions": []}
+POSE_RESULT {"pose": [0, -70, -15], "count": 381, "mass": {"stationary": 6.555733681226788, "yaw": 5.220844994112769, "pitch": 1.2554728218773434}, "yaw_j": 0.11044978814382173, "collisions": []}
+POSE_RESULT {"pose": [500, 70, -15], "count": 381, "mass": {"stationary": 6.555733681226788, "yaw": 5.220844994112769, "pitch": 1.2554728218773434}, "yaw_j": 0.11044978814382173, "collisions": []}
+DONE_POSE_AUDIT

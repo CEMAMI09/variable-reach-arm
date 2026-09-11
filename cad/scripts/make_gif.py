@@ -1,56 +1,56 @@
 #!/usr/bin/env python3
-"""Stitch FreeCAD PNG frames into an animated GIF."""
-
-from __future__ import annotations
-
-import argparse
+"""Make captioned, fixed-scale GIFs from current full-CAD animation frames."""
 from pathlib import Path
+import argparse
+import json
+from PIL import Image, ImageDraw, ImageFont
 
-from PIL import Image
-
-
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument(
-        "--frames",
-        default="/Users/user/Documents/chat/variable-reach-arm/cad/animations/frames",
-    )
-    ap.add_argument(
-        "--out",
-        default="/Users/user/Documents/chat/variable-reach-arm/cad/animations/arm_motion.gif",
-    )
-    ap.add_argument("--fps", type=float, default=12.0)
-    ap.add_argument("--scale", type=float, default=0.75, help="Downscale for smaller GIF")
-    args = ap.parse_args()
-
-    frame_dir = Path(args.frames)
-    files = sorted(frame_dir.glob("frame_*.png"))
-    if not files:
-        raise SystemExit(f"No frames in {frame_dir}")
-
-    images = []
-    for f in files:
-        im = Image.open(f).convert("RGBA")
-        if args.scale != 1.0:
-            w = int(im.width * args.scale)
-            h = int(im.height * args.scale)
-            im = im.resize((w, h), Image.Resampling.LANCZOS)
-        # GIF-friendly palette
-        images.append(im.convert("P", palette=Image.Palette.ADAPTIVE, colors=256))
-
-    duration = int(1000 / args.fps)
-    out = Path(args.out)
-    out.parent.mkdir(parents=True, exist_ok=True)
-    images[0].save(
-        out,
-        save_all=True,
-        append_images=images[1:],
-        duration=duration,
-        loop=0,
-        optimize=True,
-    )
-    print(f"Wrote {out} ({len(images)} frames, {out.stat().st_size / 1e6:.2f} MB)")
+ROOT = Path(__file__).resolve().parents[2]
 
 
-if __name__ == "__main__":
-    main()
+def make_gif(frame_dir, output, fps=12, scale=1):
+    if fps<=0 or scale<=0: raise ValueError('fps and scale must be positive')
+    frame_dir=Path(frame_dir)
+    metadata=json.loads((frame_dir/'metadata.json').read_text(encoding='utf-8'))
+    images=[]
+    def load_font(size):
+        for candidate in ('C:/Windows/Fonts/arial.ttf', 'DejaVuSans.ttf'):
+            try: return ImageFont.truetype(candidate,size)
+            except OSError: pass
+        return ImageFont.load_default(size=size)
+    font=load_font(17)
+    small=load_font(14)
+    for row in metadata['frames']:
+        with Image.open(frame_dir/row['file']) as source:
+            raw=source.convert('RGB')
+        if scale!=1:
+            raw=raw.resize((round(raw.width*scale),round(raw.height*scale)),Image.Resampling.LANCZOS)
+        canvas=Image.new('RGB',(raw.width,raw.height+88),'white')
+        canvas.paste(raw,(0,88))
+        draw=ImageDraw.Draw(canvas)
+        draw.rectangle((0,0,raw.width,88),fill='#152735')
+        draw.text((16,9),'VARIABLE REACH ARM | Full CAD clearance prototype',fill='white',font=font)
+        draw.text((16,33),'Kinematic demonstration — not measured speed or demonstrated catching',fill='#ffd48d',font=small)
+        draw.text((16,56),f"Yaw {row['yaw_deg']:+.0f}°   Pitch {row['pitch_deg']:+.0f}°   Extension {row['extension_mm']:.0f} mm   |   {metadata['pivot_height_mm']:.0f} mm raised shoulder study",fill='white',font=small)
+        images.append(canvas.quantize(colors=192,method=Image.Quantize.MEDIANCUT))
+    output=Path(output)
+    output.parent.mkdir(parents=True,exist_ok=True)
+    images[0].save(output,save_all=True,append_images=images[1:],duration=round(1000/fps),loop=0,disposal=2,optimize=False)
+    with Image.open(output) as check:
+        assert check.n_frames>=2
+        dimensions=check.size
+    return dict(path=str(output),frames=len(images),size=dimensions,fps=fps,bytes=output.stat().st_size)
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--frames',type=Path,default=ROOT/'cad/animations/frames')
+    parser.add_argument('--out',type=Path,default=ROOT/'cad/animations/arm_motion.gif')
+    parser.add_argument('--fps',type=float,default=12)
+    parser.add_argument('--scale',type=float,default=1)
+    args=parser.parse_args()
+    print(json.dumps(make_gif(args.frames,args.out,args.fps,args.scale),indent=2))
+
+
+if __name__=='__main__':main()
+

@@ -11,6 +11,8 @@ struct AxisState {
   float current_mA;
   float integral;
   float kp, kd, ki;
+  bool target_valid;
+  bool measurement_valid;
 };
 
 struct JointCommand {
@@ -23,6 +25,9 @@ struct JointCommand {
 };
 
 void control_init();
+void control_reset();
+// Reset invalidates measurements and targets. Future arm logic must first
+// acquire fresh timestamped measurements and hand off to a measured hold pose.
 void control_set_gains(int axis, float kp, float kd, float ki);
 void control_set_targets(const JointCommand &cmd);
 void control_update_measurement(int axis, float pos, float vel, float current_mA);

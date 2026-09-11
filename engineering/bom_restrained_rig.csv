@@ -1,0 +1,23 @@
+item,qty,component,spec,unit_price_usd,ext_price_usd,stage,price_status,source_or_basis,purpose
+1,1,Outer tube,36in stock1.5in square6061,26.1,26.1,rig,observed_2026-09-07,Same source as full BOM,770mm cut
+2,1,Inner tube,36in stock1in square6061,22,22,rig,estimate_unquoted,Local stock quote needed,805mm cut
+3,1,Economy42mm closed-loop motor and driver,Candidate integrated encoder controller with hardware enable and fault output,45,45,rig,estimate_unquoted,Exact kit supplier thermal and fault behavior still a gate,Single-axis low-speed characterization
+4,1,Belt transmission kit,9mm GT2 belt; two36T metal pulleys; two625 bearings;5mm idler shaft collars; metal clamp cap,30,30,rig,estimate_unquoted,Unquoted allowance; exact belt and pulley ratings pending;625 boundary dimensions5x16x5mm,Low-speed extension
+5,1,Wear strip and shims,Acetal wear stock for12 retained shoes plus clearance shims; printed fit coupons separate,12,12,rig,estimate_unquoted,Small stock purchase,Six front and six rear replaceable wear shoes; do not budget an absent printed carrier
+6,1,PETG filament,Full1kg spool,20,20,rig,estimate_unquoted,Full spool cash price,Guide and claw housing fit parts
+7,1,TPU filament,Full1kg spool,22,22,rig,estimate_unquoted,Full spool cash price,Compliant contact pads and bumpers; rigid claw fingers use structural filament
+8,1,Fasteners and inserts,M2 M3 M4 M5 M6 M8 fasteners as applicable; washers locknuts inserts and smooth claw pins,23,23,rig,estimate_unquoted,Pack-purchase allowance; includes24 M2x8 guide screws24 M2 nuts24 thin washers; exact remaining grip lengths pending CAD,Assembly
+9,1,Rig microcontroller,Owned ESP32 exact board pending,0,0,rig,user_owned_2026-09-07,Requires ESP32 firmware port and hardware verification; current target Teensy,Deterministic low-speed steps and watchdog
+10,1,External motor supply,Enclosed approved24V60W adapter candidate,35,35,rig,estimate_unquoted,Exact adapter load transient and approvals must be verified,No exposed mains assembly in rig
+11,1,Limit switches,Two NC home and end contacts with brackets,6,6,rig,estimate_unquoted,Proof wiring behavior before movement,Stroke limits
+12,1,E-stop,NC mushroom with manual reset,12,12,rig,estimate_unquoted,Independent hardware cutoff circuit,User stop
+13,1,DC cutoff hardware,DC-rated relay or switch for24V2.5A plus suppressor,12,12,rig,estimate_unquoted,Rating verified before use not automotive assumption,Motor power interruption
+14,1,Fuse wiring and connectors,Small branch fuse holder shielded feedback and power wire,16,16,rig,estimate_unquoted,Appropriate DC ratings and strain relief,Protected rig harness
+15,1,Regeneration protection,Low-energy bus clamp and pulse resistor,20,20,rig,estimate_unquoted,Rig speed capped0.15mps horizontal,Protect driver downstream of cutoff
+16,1,Logic interfaces,Driver logic level interface and fault readback,10,10,rig,estimate_unquoted,Board compatibility to verify,Hardware enable and telemetry
+17,1,Claw mechanism hardware,Single microservo three springs tendons pins and retainers,16,16,rig,estimate_unquoted,Unknown owned servo not yet credited; exact model torque speed travel and current pending; includes metal pins springs tendons retainers,No net three-finger claw
+18,1,Fixture and end stops,Bench restraint; four5mm steel stop pins and metal retaining caps; printed split collars and keyed TPU pads,22,22,rig,estimate_unquoted,Unquoted allowance; printed parts use filament lines; single-pin impact proof required,Horizontal restrained fixture
+19,1,Rig guard,Local rigid tube and belt guard stock,15,15,rig,estimate_unquoted,Local low-speed single-axis containment not fullrobot guard,Pinch protection
+20,1,Foam balls,Small low-mass practice ball set,6,6,rig,estimate_unquoted,Weigh and characterize,Low-height claw drop tests
+21,1,Consumables,Solder heatshrink tie points threadlocker,8,8,rig,estimate_unquoted,Small purchase allowance,Rig build
+22,1,Claw power regulator,Separate filtered5to6V buck sized for measured servo peak current,8,8,rig,estimate_unquoted,Planning allowance not selected hardware; bus input voltage and servo rail required; no MCU3.3V servo supply,Isolate servo current pulses from MCU rail with common reference and local bulk capacitance
